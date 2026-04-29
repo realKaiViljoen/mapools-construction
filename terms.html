@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Terms of Service | Ma Pools Construction</title>
-<meta name="description" content="Terms governing use of Ma Pools Construction's pool care services in Gauteng — bookings, cancellations, payment, liability, and South African governing law."/>
+<meta name="description" content="Terms governing use of Ma Pools Construction's pool care services in Gauteng, bookings, cancellations, payment, liability, and South African governing law."/>
 <meta name="robots" content="index, follow, max-image-preview:standard"/>
 <link rel="canonical" href="https://www.mapoolsconstruction.co.za/terms.html"/>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
@@ -24,129 +24,169 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-  tailwind.config = {
-    darkMode:"class",
-    theme: {
-      extend: {
-        colors: {"primary":"#000d22","primary-container":"#0a2342","on-primary":"#ffffff","tertiary-fixed-dim":"#e9c176","on-tertiary-container":"#a78541","surface":"#f8f9ff","surface-container-low":"#eff4ff","on-surface":"#181c1f","on-surface-variant":"#44474e","outline-variant":"#c4c6cf","background":"#f8f9ff","on-background":"#181c1f"
-        },
-        fontFamily: {"body-md": ["Manrope"],"label-upper": ["Manrope"],"body-lg": ["Manrope"],"headline-lg": ["Manrope"],"headline-md": ["Manrope"],"display-xl": ["Manrope"]
-        },
-        fontSize: {"body-md": ["16px", {"lineHeight":"1.7","fontWeight":"400" }],"label-upper": ["12px", {"lineHeight":"1.4","letterSpacing":"0.1em","fontWeight":"700" }],"body-lg": ["18px", {"lineHeight":"1.7","fontWeight":"400" }],"headline-md": ["28px", {"lineHeight":"1.3","fontWeight":"600" }],"headline-lg": ["40px", {"lineHeight":"1.2","fontWeight":"600" }],"display-xl": ["56px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700" }]
-        }
-      }
-    }
-  };
+ tailwind.config = {
+ darkMode:"class",
+ theme: {
+ extend: {
+ colors: {"primary":"#000d22","primary-container":"#0a2342","on-primary":"#ffffff","tertiary-fixed-dim":"#e9c176","on-tertiary-container":"#a78541","surface":"#f8f9ff","surface-container-low":"#eff4ff","on-surface":"#181c1f","on-surface-variant":"#44474e","outline-variant":"#c4c6cf","background":"#f8f9ff","on-background":"#181c1f"
+ },
+ fontFamily: {"body-md": ["Manrope"],"label-upper": ["Manrope"],"body-lg": ["Manrope"],"headline-lg": ["Manrope"],"headline-md": ["Manrope"],"display-xl": ["Manrope"]
+ },
+ fontSize: {"body-md": ["16px", {"lineHeight":"1.7","fontWeight":"400" }],"label-upper": ["12px", {"lineHeight":"1.4","letterSpacing":"0.1em","fontWeight":"700" }],"body-lg": ["18px", {"lineHeight":"1.7","fontWeight":"400" }],"headline-md": ["28px", {"lineHeight":"1.3","fontWeight":"600" }],"headline-lg": ["40px", {"lineHeight":"1.2","fontWeight":"600" }],"display-xl": ["56px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700" }]
+ }
+ }
+ }
+ };
 </script>
-<style>        :root { --brand-navy: #0A2342; --brand-green: #25D366; --brand-cyan: #2BA8B8; }
-        body { font-family: 'Manrope', system-ui, sans-serif; }
+<style> :root { --brand-navy: #0A2342; --brand-green: #25D366; --brand-cyan: #2BA8B8; }
+ body { font-family: 'Manrope', system-ui, sans-serif; }
 
-  .legal-prose h2 { margin-top: 3rem; margin-bottom: 1rem; }
-  .legal-prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; font-weight: 600; color: #0a2342; }
-  .legal-prose p, .legal-prose li { color: #44474e; line-height: 1.75; }
-  .legal-prose ul { list-style: disc; padding-left: 1.5rem; margin: 1rem 0; }
-  .legal-prose a { color: #0a2342; text-decoration: underline; text-underline-offset: 4px; }
-  .legal-prose a:hover { color: #7a5e1f; }
-        /* iOS safe-area for sticky bottom bar */
-        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
-</style>
+ .legal-prose h2 { margin-top: 3rem; margin-bottom: 1rem; }
+ .legal-prose h3 { margin-top: 2rem; margin-bottom: 0.75rem; font-weight: 600; color: #0a2342; }
+ .legal-prose p, .legal-prose li { color: #44474e; line-height: 1.75; }
+ .legal-prose ul { list-style: disc; padding-left: 1.5rem; margin: 1rem 0; }
+ .legal-prose a { color: #0a2342; text-decoration: underline; text-underline-offset: 4px; }
+ .legal-prose a:hover { color: #7a5e1f; }
+ /* iOS safe-area for sticky bottom bar */
+ .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
+
+        /* Custom cursor (desktop only) */
+        .ma-cursor-dot, .ma-cursor-ring {
+            position: fixed;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            border-radius: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            display: none;
+        }
+        @media (hover: hover) and (pointer: fine) {
+            body.ma-cursor-on { cursor: none; }
+            body.ma-cursor-on a,
+            body.ma-cursor-on button,
+            body.ma-cursor-on [role="button"],
+            body.ma-cursor-on summary,
+            body.ma-cursor-on label { cursor: none; }
+            body.ma-cursor-on input,
+            body.ma-cursor-on textarea,
+            body.ma-cursor-on select { cursor: text; }
+            .ma-cursor-dot, .ma-cursor-ring { display: block; }
+        }
+        .ma-cursor-dot {
+            width: 6px; height: 6px;
+            background: #0A2342;
+        }
+        .ma-cursor-ring {
+            width: 32px; height: 32px;
+            border: 1.5px solid rgba(10, 35, 66, 0.35);
+            transition: width 240ms cubic-bezier(0.22, 1, 0.36, 1),
+                        height 240ms cubic-bezier(0.22, 1, 0.36, 1),
+                        border-color 240ms,
+                        background-color 240ms;
+        }
+        .ma-cursor-ring.active {
+            width: 52px; height: 52px;
+            border-color: #25D366;
+            background: rgba(37, 211, 102, 0.10);
+        }
+    </style>
 </head>
 <body class="bg-surface text-on-background font-body-md pb-20 md:pb-0">
 
 <nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] z-50 flex justify-between items-center px-8 py-3 bg-white/60 backdrop-blur-xl border border-white/20 max-w-[1280px] mt-6 rounded-full shadow-[0_20px_50px_rgba(10,35,66,0.05)]">
-  <a href="/" class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342] uppercase">Ma Pools Construction</a>
-  <div class="hidden md:flex items-center gap-8 font-serif text-sm tracking-wide uppercase">
-    <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/services">Services</a>
-    <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/gallery">Gallery</a>
-    <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/testimonials">Testimonials</a>
-    <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/about">About</a>
-  </div>
-  <a href="/book" class="bg-[#0A2342] text-white px-6 py-2.5 rounded-full font-serif text-sm tracking-wide uppercase">Get a Free Quote</a>
+ <a href="/" class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342] uppercase">Ma Pools Construction</a>
+ <div class="hidden md:flex items-center gap-8 font-serif text-sm tracking-wide uppercase">
+ <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/services">Services</a>
+ <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/gallery">Gallery</a>
+ <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/testimonials">Testimonials</a>
+ <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors" href="/about">About</a>
+ </div>
+ <a href="/book" class="bg-[#0A2342] text-white px-6 py-2.5 rounded-full font-serif text-sm tracking-wide uppercase">Get a Free Quote</a>
 </nav>
 
 <main class="pt-32 pb-32">
-  <header class="max-w-3xl mx-auto px-6 text-center mb-16">
-    <div class="signature-stamp mx-auto mb-8">
-      <span class="material-symbols-outlined text-base">gavel</span>
-      Service Terms
-    </div>
-    <h1 class="font-display-xl text-display-xl text-primary-container leading-tight mb-6">Terms of Service</h1>
-    <p class="font-body-lg text-body-lg text-on-surface-variant">Last updated: 29 April 2026</p>
-  </header>
+ <header class="max-w-3xl mx-auto px-6 text-center mb-16">
+ <div class="signature-stamp mx-auto mb-8">
+ <span class="material-symbols-outlined text-base">gavel</span>
+ Service Terms
+ </div>
+ <h1 class="font-display-xl text-display-xl text-primary-container leading-tight mb-6">Terms of Service</h1>
+ <p class="font-body-lg text-body-lg text-on-surface-variant">Last updated: 29 April 2026</p>
+ </header>
 
-  <article class="max-w-3xl mx-auto px-6 legal-prose">
+ <article class="max-w-3xl mx-auto px-6 legal-prose">
 
-    <p>These Terms of Service ("Terms") govern your engagement of Ma Pools Construction ("Ma Pools Construction","we","us","our") for pool maintenance, repair, and ancillary services. By booking a consultation or accepting a written quotation from Ma Pools Construction, you ("the Client") agree to be bound by these Terms.</p>
+ <p>These Terms of Service ("Terms") govern your engagement of Ma Pools Construction ("Ma Pools Construction","we","us","our") for pool maintenance, repair, and ancillary services. By booking a consultation or accepting a written quotation from Ma Pools Construction, you ("the Client") agree to be bound by these Terms.</p>
 
-    <h2 class="font-headline-md text-headline-md">1. Services</h2>
-    <p>Ma Pools Construction provides specialist pool care services to private residential clients in Gauteng, South Africa. Services may include, but are not limited to:</p>
-    <ul>
-      <li>Weekly and ad-hoc pool maintenance.</li>
-      <li>Water-chemistry balancing and analysis.</li>
-      <li>Equipment installation, calibration, and repair (pumps, filters, heaters, chlorinators, UV sterilisers, variable-speed motors).</li>
-      <li>Acid washes and deep-cleaning treatments.</li>
-      <li>Eco-friendly equipment upgrades and saline conversions.</li>
-      <li>Structural and aesthetic inspections of pool plaster, tiling, coping, and surrounds.</li>
-    </ul>
-    <p>The exact scope of work for each engagement is defined in the written quotation or service agreement we issue prior to commencement.</p>
+ <h2 class="font-headline-md text-headline-md">1. Services</h2>
+ <p>Ma Pools Construction provides specialist pool care services to private residential clients in Gauteng, South Africa. Services may include, but are not limited to:</p>
+ <ul>
+ <li>Weekly and ad-hoc pool maintenance.</li>
+ <li>Water-chemistry balancing and analysis.</li>
+ <li>Equipment installation, calibration, and repair (pumps, filters, heaters, chlorinators, UV sterilisers, variable-speed motors).</li>
+ <li>Acid washes and deep-cleaning treatments.</li>
+ <li>Eco-friendly equipment upgrades and saline conversions.</li>
+ <li>Structural and aesthetic inspections of pool plaster, tiling, coping, and surrounds.</li>
+ </ul>
+ <p>The exact scope of work for each engagement is defined in the written quotation or service agreement we issue prior to commencement.</p>
 
-    <h2 class="font-headline-md text-headline-md">2. Bookings, Quotations and Acceptance</h2>
-    <p>All bookings begin with a written quotation. A quotation is valid for 30 days from issue. The Client accepts a quotation by written confirmation (email or message) or by signing the service agreement. Ma Pools Construction reserves the right to decline any engagement at its sole discretion, including where access, safety, or scope cannot be reasonably ensured.</p>
+ <h2 class="font-headline-md text-headline-md">2. Bookings, Quotations and Acceptance</h2>
+ <p>All bookings begin with a written quotation. A quotation is valid for 30 days from issue. The Client accepts a quotation by written confirmation (email or message) or by signing the service agreement. Ma Pools Construction reserves the right to decline any engagement at its sole discretion, including where access, safety, or scope cannot be reasonably ensured.</p>
 
-    <h2 class="font-headline-md text-headline-md">3. Pricing and Payment</h2>
-    <p>Pricing is set out in the applicable quotation or service agreement. Unless otherwise stated:</p>
-    <ul>
-      <li>All prices are quoted in South African Rand (ZAR) and are inclusive of VAT where applicable.</li>
-      <li>Recurring (monthly or weekly) services are invoiced monthly in advance.</li>
-      <li>One-off services (repairs, acid washes, installations) are invoiced on completion, unless a deposit is agreed in advance for parts or equipment.</li>
-      <li>Payment is due within 7 (seven) days of invoice date by EFT, debit order, or other agreed method.</li>
-      <li>Late payments may attract interest at the prescribed rate set out in the South African Prescribed Rate of Interest Act, plus a reasonable administration fee.</li>
-    </ul>
+ <h2 class="font-headline-md text-headline-md">3. Pricing and Payment</h2>
+ <p>Pricing is set out in the applicable quotation or service agreement. Unless otherwise stated:</p>
+ <ul>
+ <li>All prices are quoted in South African Rand (ZAR) and are inclusive of VAT where applicable.</li>
+ <li>Recurring (monthly or weekly) services are invoiced monthly in advance.</li>
+ <li>One-off services (repairs, acid washes, installations) are invoiced on completion, unless a deposit is agreed in advance for parts or equipment.</li>
+ <li>Payment is due within 7 (seven) days of invoice date by EFT, debit order, or other agreed method.</li>
+ <li>Late payments may attract interest at the prescribed rate set out in the South African Prescribed Rate of Interest Act, plus a reasonable administration fee.</li>
+ </ul>
 
-    <h2 class="font-headline-md text-headline-md">4. Cancellations and Rescheduling</h2>
-    <p>The Client may cancel or reschedule a booked service by giving Ma Pools Construction at least 24 hours' written notice. Cancellations made with less than 24 hours' notice may attract a call-out fee equal to the cost of one standard service visit. Recurring service contracts may be terminated by either party on 30 days' written notice.</p>
+ <h2 class="font-headline-md text-headline-md">4. Cancellations and Rescheduling</h2>
+ <p>The Client may cancel or reschedule a booked service by giving Ma Pools Construction at least 24 hours' written notice. Cancellations made with less than 24 hours' notice may attract a call-out fee equal to the cost of one standard service visit. Recurring service contracts may be terminated by either party on 30 days' written notice.</p>
 
-    <h2 class="font-headline-md text-headline-md">5. Access, Safety and Site Conditions</h2>
-    <p>The Client is responsible for ensuring safe and lawful access to the property and the pool area on scheduled service dates. Ma Pools Construction technicians may decline to commence or continue work if the site is unsafe, materially differs from what was disclosed during quotation, or if hazardous conditions are present (live electrical faults, structural risk, biohazards, aggressive animals).</p>
+ <h2 class="font-headline-md text-headline-md">5. Access, Safety and Site Conditions</h2>
+ <p>The Client is responsible for ensuring safe and lawful access to the property and the pool area on scheduled service dates. Ma Pools Construction technicians may decline to commence or continue work if the site is unsafe, materially differs from what was disclosed during quotation, or if hazardous conditions are present (live electrical faults, structural risk, biohazards, aggressive animals).</p>
 
-    <h2 class="font-headline-md text-headline-md">6. Equipment and Parts</h2>
-    <p>Where parts or equipment are supplied as part of a service, they are warranted on the terms of their respective manufacturers. Ma Pools Construction will pass on any such warranty to the Client and assist reasonably with claims. Ma Pools Construction does not warrant equipment beyond the manufacturer's stated terms.</p>
+ <h2 class="font-headline-md text-headline-md">6. Equipment and Parts</h2>
+ <p>Where parts or equipment are supplied as part of a service, they are warranted on the terms of their respective manufacturers. Ma Pools Construction will pass on any such warranty to the Client and assist reasonably with claims. Ma Pools Construction does not warrant equipment beyond the manufacturer's stated terms.</p>
 
-    <h2 class="font-headline-md text-headline-md">7. Workmanship Guarantee</h2>
-    <p>Ma Pools Construction guarantees the workmanship of its technicians for a period of 30 days from the date of completion of any one-off service or installation, subject to normal use and absent third-party interference. Defects identified during this period and reported in writing will be rectified at no additional cost.</p>
+ <h2 class="font-headline-md text-headline-md">7. Workmanship Guarantee</h2>
+ <p>Ma Pools Construction guarantees the workmanship of its technicians for a period of 30 days from the date of completion of any one-off service or installation, subject to normal use and absent third-party interference. Defects identified during this period and reported in writing will be rectified at no additional cost.</p>
 
-    <h2 class="font-headline-md text-headline-md">8. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law:</p>
-    <ul>
-      <li>Ma Pools Construction's total aggregate liability arising out of or in connection with any service shall not exceed the fees paid by the Client for that specific service.</li>
-      <li>Ma Pools Construction shall not be liable for indirect, consequential, or special damages, including loss of use, loss of profits, or loss of opportunity.</li>
-      <li>Nothing in these Terms limits or excludes liability that cannot lawfully be limited or excluded under South African law, including liability arising under the Consumer Protection Act, 2008.</li>
-    </ul>
+ <h2 class="font-headline-md text-headline-md">8. Limitation of Liability</h2>
+ <p>To the maximum extent permitted by law:</p>
+ <ul>
+ <li>Ma Pools Construction's total aggregate liability arising out of or in connection with any service shall not exceed the fees paid by the Client for that specific service.</li>
+ <li>Ma Pools Construction shall not be liable for indirect, consequential, or special damages, including loss of use, loss of profits, or loss of opportunity.</li>
+ <li>Nothing in these Terms limits or excludes liability that cannot lawfully be limited or excluded under South African law, including liability arising under the Consumer Protection Act, 2008.</li>
+ </ul>
 
-    <h2 class="font-headline-md text-headline-md">9. Force Majeure</h2>
-    <p>Ma Pools Construction shall not be liable for any failure or delay in performing its obligations where such failure or delay results from causes beyond its reasonable control, including but not limited to load-shedding of unusual scale, water restrictions, severe weather, civil unrest, government action, pandemic, or supply-chain disruption.</p>
+ <h2 class="font-headline-md text-headline-md">9. Force Majeure</h2>
+ <p>Ma Pools Construction shall not be liable for any failure or delay in performing its obligations where such failure or delay results from causes beyond its reasonable control, including but not limited to load-shedding of unusual scale, water restrictions, severe weather, civil unrest, government action, pandemic, or supply-chain disruption.</p>
 
-    <h2 class="font-headline-md text-headline-md">10. Intellectual Property</h2>
-    <p>All content on the Ma Pools Construction website, including text, photography, branding, and service descriptions, is the property of Ma Pools Construction or its licensors. Reproduction without written permission is prohibited.</p>
+ <h2 class="font-headline-md text-headline-md">10. Intellectual Property</h2>
+ <p>All content on the Ma Pools Construction website, including text, photography, branding, and service descriptions, is the property of Ma Pools Construction or its licensors. Reproduction without written permission is prohibited.</p>
 
-    <h2 class="font-headline-md text-headline-md">11. Confidentiality and Privacy</h2>
-    <p>Each party agrees to keep confidential any non-public information shared by the other in the course of the engagement. Ma Pools Construction's handling of personal information is set out in our <a href="/privacy">Privacy Policy</a>, which forms part of these Terms.</p>
+ <h2 class="font-headline-md text-headline-md">11. Confidentiality and Privacy</h2>
+ <p>Each party agrees to keep confidential any non-public information shared by the other in the course of the engagement. Ma Pools Construction's handling of personal information is set out in our <a href="/privacy">Privacy Policy</a>, which forms part of these Terms.</p>
 
-    <h2 class="font-headline-md text-headline-md">12. Governing Law and Jurisdiction</h2>
-    <p>These Terms are governed by the laws of the Republic of South Africa. Any dispute arising from or in connection with these Terms shall be referred first to good-faith negotiation between the parties, and failing resolution, to the exclusive jurisdiction of the High Court of South Africa, Gauteng Division.</p>
+ <h2 class="font-headline-md text-headline-md">12. Governing Law and Jurisdiction</h2>
+ <p>These Terms are governed by the laws of the Republic of South Africa. Any dispute arising from or in connection with these Terms shall be referred first to good-faith negotiation between the parties, and failing resolution, to the exclusive jurisdiction of the High Court of South Africa, Gauteng Division.</p>
 
-    <h2 class="font-headline-md text-headline-md">13. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. The current version is published on this page; the"Last updated" date indicates when the Terms were last revised. Any changes apply to engagements entered into after the revision date.</p>
+ <h2 class="font-headline-md text-headline-md">13. Changes to These Terms</h2>
+ <p>We may update these Terms from time to time. The current version is published on this page; the"Last updated" date indicates when the Terms were last revised. Any changes apply to engagements entered into after the revision date.</p>
 
-    <h2 class="font-headline-md text-headline-md">14. Contact</h2>
-    <p>Questions about these Terms can be directed to:</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:legal@mapoolsconstruction.co.za">legal@mapoolsconstruction.co.za</a></li>
-      <li><strong>Telephone:</strong> +27 78 712 2157</li>
-      <li><strong>Postal address:</strong> Ma Pools Construction, Meadowlands, Meadowlands, Soweto, 2196, South Africa</li>
-    </ul>
+ <h2 class="font-headline-md text-headline-md">14. Contact</h2>
+ <p>Questions about these Terms can be directed to:</p>
+ <ul>
+ <li><strong>Email:</strong> <a href="mailto:legal@mapoolsconstruction.co.za">legal@mapoolsconstruction.co.za</a></li>
+ <li><strong>Telephone:</strong> +27 78 712 2157</li>
+ <li><strong>Postal address:</strong> Ma Pools Construction, Meadowlands, Meadowlands, Soweto, 2196, South Africa</li>
+ </ul>
 
-  </article>
+ </article>
 </main>
 
 <!-- AE:FOOTER:START -->
@@ -163,10 +203,10 @@
 <p class="font-serif text-sm tracking-widest uppercase text-[#0A2342]">Visit</p>
 </div>
 <address class="not-italic font-serif text-sm leading-relaxed text-slate-600">
-                331B Utekwane Street, Zone 7<br/>
-                Meadowlands, 1852<br/>
-                Soweto, Gauteng
-            </address>
+ 331B Utekwane Street, Zone 7<br/>
+ Meadowlands, 1852<br/>
+ Soweto, Gauteng
+ </address>
 </div>
 <div class="space-y-4">
 <div class="flex items-center gap-2">
@@ -219,5 +259,41 @@ WhatsApp
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.554-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.521.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
 </a>
 <!-- AE:WA-FLOAT:END -->
+<!-- AE:CURSOR:START -->
+<script>
+(function(){
+  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  if (window.maCursorOn) return; window.maCursorOn = true;
+  document.body.classList.add('ma-cursor-on');
+  var dot = document.createElement('div'); dot.className = 'ma-cursor-dot';
+  var ring = document.createElement('div'); ring.className = 'ma-cursor-ring';
+  document.body.appendChild(dot); document.body.appendChild(ring);
+  var mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', function(e){
+    mx = e.clientX; my = e.clientY;
+    dot.style.transform = 'translate3d(' + mx + 'px,' + my + 'px,0) translate(-50%,-50%)';
+  }, { passive: true });
+  (function loop(){
+    rx += (mx - rx) * 0.18;
+    ry += (my - ry) * 0.18;
+    ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0) translate(-50%,-50%)';
+    requestAnimationFrame(loop);
+  })();
+  var sel = 'a, button, [role="button"], summary, label, [data-cursor="active"]';
+  document.addEventListener('mouseover', function(e){
+    if (e.target && e.target.closest && e.target.closest(sel)) ring.classList.add('active');
+  });
+  document.addEventListener('mouseout', function(e){
+    if (e.target && e.target.closest && e.target.closest(sel)) ring.classList.remove('active');
+  });
+  document.addEventListener('mouseleave', function(){
+    dot.style.opacity = ring.style.opacity = '0';
+  });
+  document.addEventListener('mouseenter', function(){
+    dot.style.opacity = ring.style.opacity = '1';
+  });
+})();
+</script>
+<!-- AE:CURSOR:END -->
 </body>
 </html>

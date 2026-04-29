@@ -9,39 +9,79 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode:"class",
-        theme: {
-          extend: {"colors": {"primary-fixed":"#d5e3ff","outline":"#74777e","on-error":"#ffffff","tertiary-fixed-dim":"#e9c176","on-tertiary-container":"#a78541","error":"#ba1a1a","surface":"#f8f9ff","inverse-primary":"#b2c7ef","inverse-surface":"#2d3134","primary":"#000d22","on-error-container":"#93000a","on-secondary-fixed":"#1a1c1c","secondary-container":"#dfe0e0","on-tertiary-fixed-variant":"#5d4201","primary-fixed-dim":"#b2c7ef","on-secondary-container":"#616363","surface-container-high":"#e5e8ec","on-tertiary-fixed":"#261900","on-secondary-fixed-variant":"#454747","surface-container":"#ebeef2","tertiary-container":"#302000","on-surface":"#181c1f","on-secondary":"#ffffff","surface-bright":"#f8f9ff","on-primary-container":"#768baf","on-primary-fixed":"#021c3a","secondary":"#5d5f5f","surface-tint":"#4a5f81","surface-container-lowest":"#ffffff","inverse-on-surface":"#eef1f4","on-tertiary":"#ffffff","outline-variant":"#c4c6cf","surface-container-highest":"#e0e3e6","error-container":"#ffdad6","on-primary":"#ffffff","tertiary":"#140b00","tertiary-fixed":"#ffdea5","primary-container":"#0a2342","secondary-fixed":"#e2e2e2","on-background":"#181c1f","background":"#f8f9ff","surface-dim":"#cbdbf5","on-primary-fixed-variant":"#324768","surface-variant":"#e0e3e6","surface-container-low":"#eff4ff","on-surface-variant":"#44474e","secondary-fixed-dim":"#c6c6c7"
-            },"borderRadius": {"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","2xl":"1rem","3xl":"1.5rem","full":"9999px"
-            },"spacing": {"unit":"8px","container-max":"1280px","gutter":"32px","margin-mobile":"24px","margin-desktop":"80px"
-            },"fontFamily": {"sans": ["Manrope","system-ui","sans-serif"],"serif": ["Manrope","system-ui","sans-serif"],"body-md": ["Manrope"],"label-upper": ["Manrope"],"body-lg": ["Manrope"],"headline-lg": ["Manrope"],"headline-md": ["Manrope"],"display-xl": ["Manrope"]
-            },"fontSize": {"body-md": ["16px", {"lineHeight":"1.6","fontWeight":"400"}],"label-upper": ["12px", {"lineHeight":"1.4","letterSpacing":"0.1em","fontWeight":"700"}],"body-lg": ["18px", {"lineHeight":"1.6","fontWeight":"400"}],"headline-lg": ["40px", {"lineHeight":"1.2","fontWeight":"600"}],"headline-md": ["32px", {"lineHeight":"1.3","fontWeight":"500"}],"display-xl": ["64px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}]
-            }
-          },
-        },
-      }
-    </script>
+ tailwind.config = {
+ darkMode:"class",
+ theme: {
+ extend: {"colors": {"primary-fixed":"#d5e3ff","outline":"#74777e","on-error":"#ffffff","tertiary-fixed-dim":"#e9c176","on-tertiary-container":"#a78541","error":"#ba1a1a","surface":"#f8f9ff","inverse-primary":"#b2c7ef","inverse-surface":"#2d3134","primary":"#000d22","on-error-container":"#93000a","on-secondary-fixed":"#1a1c1c","secondary-container":"#dfe0e0","on-tertiary-fixed-variant":"#5d4201","primary-fixed-dim":"#b2c7ef","on-secondary-container":"#616363","surface-container-high":"#e5e8ec","on-tertiary-fixed":"#261900","on-secondary-fixed-variant":"#454747","surface-container":"#ebeef2","tertiary-container":"#302000","on-surface":"#181c1f","on-secondary":"#ffffff","surface-bright":"#f8f9ff","on-primary-container":"#768baf","on-primary-fixed":"#021c3a","secondary":"#5d5f5f","surface-tint":"#4a5f81","surface-container-lowest":"#ffffff","inverse-on-surface":"#eef1f4","on-tertiary":"#ffffff","outline-variant":"#c4c6cf","surface-container-highest":"#e0e3e6","error-container":"#ffdad6","on-primary":"#ffffff","tertiary":"#140b00","tertiary-fixed":"#ffdea5","primary-container":"#0a2342","secondary-fixed":"#e2e2e2","on-background":"#181c1f","background":"#f8f9ff","surface-dim":"#cbdbf5","on-primary-fixed-variant":"#324768","surface-variant":"#e0e3e6","surface-container-low":"#eff4ff","on-surface-variant":"#44474e","secondary-fixed-dim":"#c6c6c7"
+ },"borderRadius": {"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","2xl":"1rem","3xl":"1.5rem","full":"9999px"
+ },"spacing": {"unit":"8px","container-max":"1280px","gutter":"32px","margin-mobile":"24px","margin-desktop":"80px"
+ },"fontFamily": {"sans": ["Manrope","system-ui","sans-serif"],"serif": ["Manrope","system-ui","sans-serif"],"body-md": ["Manrope"],"label-upper": ["Manrope"],"body-lg": ["Manrope"],"headline-lg": ["Manrope"],"headline-md": ["Manrope"],"display-xl": ["Manrope"]
+ },"fontSize": {"body-md": ["16px", {"lineHeight":"1.6","fontWeight":"400"}],"label-upper": ["12px", {"lineHeight":"1.4","letterSpacing":"0.1em","fontWeight":"700"}],"body-lg": ["18px", {"lineHeight":"1.6","fontWeight":"400"}],"headline-lg": ["40px", {"lineHeight":"1.2","fontWeight":"600"}],"headline-md": ["32px", {"lineHeight":"1.3","fontWeight":"500"}],"display-xl": ["64px", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}]
+ }
+ },
+ },
+ }
+ </script>
 <style>
-        :root { --brand-navy: #0A2342; --brand-green: #25D366; --brand-cyan: #2BA8B8; }
-        body { font-family: 'Manrope', system-ui, sans-serif; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+ :root { --brand-navy: #0A2342; --brand-green: #25D366; --brand-cyan: #2BA8B8; }
+ body { font-family: 'Manrope', system-ui, sans-serif; }
+ .material-symbols-outlined {
+ font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+ }
+ .scroll-reveal {
+ opacity: 0;
+ transform: translateY(24px);
+ transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+ }
+ .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
+ .delay-100 { transition-delay: 100ms; }
+ .delay-200 { transition-delay: 200ms; }
+ .delay-300 { transition-delay: 300ms; }
+ @media (prefers-reduced-motion: reduce) {
+ .scroll-reveal { opacity: 1; transform: none; transition: none; }
+ }
+ /* iOS safe-area for sticky bottom bar */
+ .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
+
+        /* Custom cursor (desktop only) */
+        .ma-cursor-dot, .ma-cursor-ring {
+            position: fixed;
+            top: 0; left: 0;
+            pointer-events: none;
+            z-index: 9999;
+            border-radius: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            display: none;
         }
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+        @media (hover: hover) and (pointer: fine) {
+            body.ma-cursor-on { cursor: none; }
+            body.ma-cursor-on a,
+            body.ma-cursor-on button,
+            body.ma-cursor-on [role="button"],
+            body.ma-cursor-on summary,
+            body.ma-cursor-on label { cursor: none; }
+            body.ma-cursor-on input,
+            body.ma-cursor-on textarea,
+            body.ma-cursor-on select { cursor: text; }
+            .ma-cursor-dot, .ma-cursor-ring { display: block; }
         }
-        .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
-        .delay-100 { transition-delay: 100ms; }
-        .delay-200 { transition-delay: 200ms; }
-        .delay-300 { transition-delay: 300ms; }
-        @media (prefers-reduced-motion: reduce) {
-            .scroll-reveal { opacity: 1; transform: none; transition: none; }
+        .ma-cursor-dot {
+            width: 6px; height: 6px;
+            background: #0A2342;
         }
-        /* iOS safe-area for sticky bottom bar */
-        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
+        .ma-cursor-ring {
+            width: 32px; height: 32px;
+            border: 1.5px solid rgba(10, 35, 66, 0.35);
+            transition: width 240ms cubic-bezier(0.22, 1, 0.36, 1),
+                        height 240ms cubic-bezier(0.22, 1, 0.36, 1),
+                        border-color 240ms,
+                        background-color 240ms;
+        }
+        .ma-cursor-ring.active {
+            width: 52px; height: 52px;
+            border-color: #25D366;
+            background: rgba(37, 211, 102, 0.10);
+        }
     </style>
 <!-- AE:META:START -->
 <title>Ma Pools Construction | Pool builds, renovations &amp; care across Gauteng</title>
@@ -55,7 +95,7 @@
 <meta property="og:description" content="Pool construction, renovations, repairs &amp; care across Gauteng. WhatsApp 065 643 0603 for a free quote."/>
 <meta property="og:url" content="https://www.mapoolsconstruction.co.za/"/>
 <meta property="og:image" content="https://www.mapoolsconstruction.co.za/assets/images/hero-luxury-infinity-pool-gauteng.png"/>
-<meta property="og:image:alt" content="Ma Pools Construction — pool construction and care across Gauteng"/>
+<meta property="og:image:alt" content="Ma Pools Construction, pool construction and care across Gauteng"/>
 <meta property="og:locale" content="en_ZA"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:site" content="@mapoolspools"/>
@@ -63,29 +103,29 @@
 <meta name="twitter:description" content="Pool construction, renovations, repairs &amp; care across Gauteng. Free quote in 24 hours."/>
 <meta name="twitter:image" content="https://www.mapoolsconstruction.co.za/assets/images/hero-luxury-infinity-pool-gauteng.png"/>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type": ["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://www.mapoolsconstruction.co.za/#business","name":"Ma Pools Construction","legalName":"Ma Pools Construction","description":"Pool construction, renovations, repairs and care across Gauteng — director-led.","url":"https://www.mapoolsconstruction.co.za/","logo":"https://www.mapoolsconstruction.co.za/favicon.svg","image":"https://www.mapoolsconstruction.co.za/assets/images/hero-luxury-infinity-pool-gauteng.png","telephone":"+27787122157","email":"mapoolsconstruction@gmail.com","priceRange":"RRRR","slogan":"New builds, renovations, and dependable pool care across Gauteng.","address": {"@type":"PostalAddress","streetAddress":"331B Utekwane Street, Zone 7","addressLocality":"Meadowlands","addressRegion":"Gauteng","postalCode":"1852","addressCountry":"ZA"
-  },"geo": {"@type":"GeoCoordinates","latitude": -26.23080,"longitude": 27.91520
-  },"areaServed": [
-    {"@type":"AdministrativeArea","name":"Gauteng" },
-    {"@type":"City","name":"Johannesburg" },
-    {"@type":"City","name":"Soweto" },
-    {"@type":"City","name":"Roodepoort" },
-    {"@type":"City","name":"Krugersdorp" },
-    {"@type":"Place","name":"Meadowlands" },
-    {"@type":"Place","name":"Diepkloof" },
-    {"@type":"Place","name":"Orlando" },
-    {"@type":"Place","name":"Pimville" },
-    {"@type":"Place","name":"Dobsonville" },
-    {"@type":"Place","name":"Naledi" },
-    {"@type":"Place","name":"Protea Glen" },
-    {"@type":"Place","name":"Lenasia" },
-    {"@type":"Place","name":"Eldorado Park" },
-    {"@type":"Place","name":"Florida" }
-  ],"openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"17:30" },
-    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"13:00" }
-  ],"sameAs": ["https://www.instagram.com/mapoolsconstruction","https://www.facebook.com/mapoolsconstruction","https://www.linkedin.com/company/ma-pools-construction"
-  ]
+{"@context":"https://schema.org","@type": ["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://www.mapoolsconstruction.co.za/#business","name":"Ma Pools Construction","legalName":"Ma Pools Construction","description":"Pool construction, renovations, repairs and care across Gauteng, director-led.","url":"https://www.mapoolsconstruction.co.za/","logo":"https://www.mapoolsconstruction.co.za/favicon.svg","image":"https://www.mapoolsconstruction.co.za/assets/images/hero-luxury-infinity-pool-gauteng.png","telephone":"+27787122157","email":"mapoolsconstruction@gmail.com","priceRange":"RRRR","slogan":"New builds, renovations, and dependable pool care across Gauteng.","address": {"@type":"PostalAddress","streetAddress":"331B Utekwane Street, Zone 7","addressLocality":"Meadowlands","addressRegion":"Gauteng","postalCode":"1852","addressCountry":"ZA"
+ },"geo": {"@type":"GeoCoordinates","latitude": -26.23080,"longitude": 27.91520
+ },"areaServed": [
+ {"@type":"AdministrativeArea","name":"Gauteng" },
+ {"@type":"City","name":"Johannesburg" },
+ {"@type":"City","name":"Soweto" },
+ {"@type":"City","name":"Roodepoort" },
+ {"@type":"City","name":"Krugersdorp" },
+ {"@type":"Place","name":"Meadowlands" },
+ {"@type":"Place","name":"Diepkloof" },
+ {"@type":"Place","name":"Orlando" },
+ {"@type":"Place","name":"Pimville" },
+ {"@type":"Place","name":"Dobsonville" },
+ {"@type":"Place","name":"Naledi" },
+ {"@type":"Place","name":"Protea Glen" },
+ {"@type":"Place","name":"Lenasia" },
+ {"@type":"Place","name":"Eldorado Park" },
+ {"@type":"Place","name":"Florida" }
+ ],"openingHoursSpecification": [
+ {"@type":"OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"17:30" },
+ {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"13:00" }
+ ],"sameAs": ["https://www.instagram.com/mapoolsconstruction","https://www.facebook.com/mapoolsconstruction","https://www.linkedin.com/company/ma-pools-construction"
+ ]
 }
 </script>
 <script type="application/ld+json">
@@ -95,11 +135,11 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","@id":"https://www.mapoolsconstruction.co.za/#faq","mainEntity":[
 {"@type":"Question","name":"What does Ma Pools Construction actually do?","acceptedAnswer":{"@type":"Answer","text":"Pool construction, renovations, marblite and fibreglass work, fish ponds, pump and motor repairs, jacuzzi installs and leak repair, filter sand changes, pool covers, plumbing, heating systems and timers. Outside the pool we also do paving, floor tiles, ceilings, house and office plumbing, and garden services."}},
-{"@type":"Question","name":"Where do you work?","acceptedAnswer":{"@type":"Answer","text":"We're based in Meadowlands, Soweto, and we cover the whole of Gauteng — Soweto, Johannesburg, Roodepoort, Krugersdorp, Diepkloof, Orlando, Pimville, Dobsonville, Lenasia, Florida, Pretoria, Centurion, Midrand and everywhere in between."}},
+{"@type":"Question","name":"Where do you work?","acceptedAnswer":{"@type":"Answer","text":"We're based in Meadowlands, Soweto, and we cover the whole of Gauteng, Soweto, Johannesburg, Roodepoort, Krugersdorp, Diepkloof, Orlando, Pimville, Dobsonville, Lenasia, Florida, Pretoria, Centurion, Midrand and everywhere in between."}},
 {"@type":"Question","name":"How fast can you give me a quote?","acceptedAnswer":{"@type":"Answer","text":"Within one business day, often the same day. WhatsApp a photo and a brief description to 065 643 0603, and Mkhacani comes back with a price. For bigger jobs we may book a free on-site visit before quoting."}},
 {"@type":"Question","name":"Do I have to pay for a quote?","acceptedAnswer":{"@type":"Answer","text":"No. Quotes are free and there's no obligation."}},
-{"@type":"Question","name":"Who do I deal with?","acceptedAnswer":{"@type":"Answer","text":"Mkhacani Amos Chauke — the founder and operating director. He answers WhatsApps and phone calls personally."}},
-{"@type":"Question","name":"Can I just get my pool serviced regularly?","acceptedAnswer":{"@type":"Answer","text":"Yes. We run weekly, fortnightly and monthly service plans — water testing, chemical balancing, filter checks. Tell us your pool size and frequency and we'll quote a flat monthly amount."}},
+{"@type":"Question","name":"Who do I deal with?","acceptedAnswer":{"@type":"Answer","text":"Mkhacani Amos Chauke, the founder and operating director. He answers WhatsApps and phone calls personally."}},
+{"@type":"Question","name":"Can I just get my pool serviced regularly?","acceptedAnswer":{"@type":"Answer","text":"Yes. We run weekly, fortnightly and monthly service plans, water testing, chemical balancing, filter checks. Tell us your pool size and frequency and we'll quote a flat monthly amount."}},
 {"@type":"Question","name":"Do you guarantee your work?","acceptedAnswer":{"@type":"Answer","text":"Yes. Workmanship is guaranteed and equipment we install is covered by the supplier's warranty."}},
 {"@type":"Question","name":"Why a pool company doing paving and plumbing?","acceptedAnswer":{"@type":"Answer","text":"Most of our customers also need their deck repaved, their tile work redone, or their plumbing rerouted around the pool. Doing it ourselves means one accountable contractor instead of three different guys to chase."}}
 ]}
@@ -109,15 +149,15 @@
 <body class="bg-white text-[#0A2342] font-body-md selection:bg-[#0A2342] selection:text-white pb-20 md:pb-0">
 <nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] z-50 flex justify-between items-center px-8 py-3 bg-white/60 backdrop-blur-xl border border-white/20 max-w-[1280px] mt-6 rounded-full shadow-[0_20px_50px_rgba(10,35,66,0.05)]">
 <div class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342] uppercase">
-        MA POOLS CONSTRUCTION
-    </div>
+ MA POOLS CONSTRUCTION
+ </div>
 <div class="hidden md:flex items-center gap-8 font-serif text-sm tracking-wide uppercase">
 <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors duration-500 hover:scale-[1.02]" href="/services.html">Services</a>
 <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors duration-500 hover:scale-[1.02]" href="/gallery.html">Gallery</a>
 <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors duration-500 hover:scale-[1.02]" href="/about.html">About</a>
 <a class="bg-[#0A2342] text-white px-6 py-2.5 rounded-full font-serif text-sm tracking-wide uppercase hover:scale-[1.02] active:scale-95 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ml-4" href="/book.html" role="button">
-            Book a Consult
-        </a>
+ Book a Consult
+ </a>
 </div>
 <!-- AE:MOBILE-NAV:START -->
 <button type="button" id="mobile-nav-trigger" class="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-full text-[#0A2342] hover:bg-[#0A2342]/5 active:scale-95 transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0A2342] focus-visible:outline-offset-2" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu">
@@ -131,17 +171,17 @@
 <a class="px-4 py-3 rounded-2xl text-[#0A2342]/85 hover:text-[#0A2342] hover:bg-[#0A2342]/5 transition-colors focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="/about.html">About</a>
 </nav>
 <a class="mt-4 flex items-center justify-center gap-2 bg-[#0A2342] text-white px-6 py-3.5 rounded-full font-serif text-sm tracking-wide uppercase active:scale-95 transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="/book.html" role="button">
-        Get a Free Quote
-      </a>
+ Get a Free Quote
+ </a>
 <div class="mt-3 grid grid-cols-2 gap-3">
 <a class="flex items-center justify-center gap-2 border border-[#0A2342]/15 text-[#0A2342] px-4 py-3 rounded-full font-serif text-xs tracking-wide uppercase hover:bg-[#0A2342]/5 active:scale-95 transition-all duration-200 focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20get%20a%20quote" rel="noopener" target="_blank">
 <span class="material-symbols-outlined text-[18px]">chat</span>
-        WhatsApp
-      </a>
+ WhatsApp
+ </a>
 <a class="flex items-center justify-center gap-2 border border-[#0A2342]/15 text-[#0A2342] px-4 py-3 rounded-full font-serif text-xs tracking-wide uppercase hover:bg-[#0A2342]/5 active:scale-95 transition-all duration-200 focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="tel:+27787122157">
 <span class="material-symbols-outlined text-[18px]">call</span>
-        Call
-      </a>
+ Call
+ </a>
 </div>
 </div>
 </div>
@@ -161,10 +201,10 @@
 Meadowlands · All of Gauteng
 </span>
 <h1 class="text-[34px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-extrabold leading-[1.05] tracking-tight text-white">
-Pool builds, repairs and renovations — done right by the director himself.
+Pool builds, repairs and renovations, done right by the director himself.
 </h1>
 <p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl">
-Mkhacani Amos Chauke and his team build, fix and maintain pools across Gauteng. Plus paving, tiling, plumbing and garden work. Send a photo on WhatsApp — get a free quote within 24 hours.
+Mkhacani Amos Chauke and his team build, fix and maintain pools across Gauteng. Plus paving, tiling, plumbing and garden work. Send a photo on WhatsApp, get a free quote within 24 hours.
 </p>
 <div class="flex flex-wrap gap-3 pt-2">
 <a class="bg-[#25D366] hover:bg-[#1ebe57] text-white px-7 py-4 rounded-full text-sm font-bold tracking-wide uppercase shadow-2xl active:scale-95 transition-all inline-flex items-center gap-2" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener" role="button">
@@ -224,9 +264,9 @@ MC
 <div class="flex-1 space-y-4">
 <p class="text-xs font-bold tracking-[0.2em] uppercase text-[#0A2342]/70">Meet your director</p>
 <p class="text-xl md:text-2xl leading-snug text-[#0A2342] font-semibold">
-"I'm Mkhacani. Every quote, every job, every WhatsApp — comes through me. No call centres, no middlemen. If we say we'll be there Tuesday, we're there Tuesday."
+"I'm Mkhacani. Every quote, every job, every WhatsApp, comes through me. No call centres, no middlemen. If we say we'll be there Tuesday, we're there Tuesday."
 </p>
-<p class="text-sm text-slate-600">— <strong class="text-[#0A2342]">Mkhacani Amos Chauke</strong>, Founder &amp; Director, Ma Pools Construction</p>
+<p class="text-sm text-slate-600">, <strong class="text-[#0A2342]">Mkhacani Amos Chauke</strong>, Founder &amp; Director, Ma Pools Construction</p>
 </div>
 </div>
 </div>
@@ -238,7 +278,7 @@ MC
 <div class="max-w-2xl space-y-3">
 <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#0A2342]/70">What we do</span>
 <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-[#0A2342]">From the first dig to the last filter sand change.</h2>
-<p class="text-base md:text-lg text-slate-700 leading-relaxed">New build, renovation, pump fix, weekly clean — all from one team. Plus paving, tiling and plumbing when you need them.</p>
+<p class="text-base md:text-lg text-slate-700 leading-relaxed">New build, renovation, pump fix, weekly clean, all from one team. Plus paving, tiling and plumbing when you need them.</p>
 </div>
 <a class="inline-flex items-center gap-1 text-xs font-bold tracking-[0.2em] uppercase text-[#0A2342] border-b-2 border-[#0A2342]/20 hover:border-[#0A2342] hover:gap-2 transition-all pb-1 self-start md:self-auto" href="/services.html">See all services <span class="material-symbols-outlined text-base">arrow_forward</span></a>
 </div>
@@ -260,7 +300,7 @@ MC
 <span class="material-symbols-outlined text-white">handyman</span>
 </div>
 <h3 class="text-xl font-bold text-[#0A2342] mb-3">Pumps, filters &amp; repairs</h3>
-<p class="text-slate-700 mb-6 leading-relaxed">Leaking jacuzzi? Motor screaming? Filter sand grey? We replace and repair — usually within the same week.</p>
+<p class="text-slate-700 mb-6 leading-relaxed">Leaking jacuzzi? Motor screaming? Filter sand grey? We replace and repair, usually within the same week.</p>
 <ul class="space-y-2 text-sm text-slate-700">
 <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#25D366] text-base mt-0.5 flex-shrink-0">check_circle</span>Pump &amp; motor repairs</li>
 <li class="flex items-start gap-2"><span class="material-symbols-outlined text-[#25D366] text-base mt-0.5 flex-shrink-0">check_circle</span>Filter sand changes</li>
@@ -289,7 +329,7 @@ MC
 <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#25D366]">Why Ma Pools</span>
 <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">One contractor. One director. One number.</h2>
 <p class="text-base md:text-lg text-white/85 leading-relaxed">
-New build, old pool, leaking pump, sand change — we do it. Same team handles your paving, tiling and plumbing too. Mkhacani answers the phone.
+New build, old pool, leaking pump, sand change, we do it. Same team handles your paving, tiling and plumbing too. Mkhacani answers the phone.
 </p>
 </div>
 <div class="space-y-6">
@@ -304,7 +344,7 @@ New build, old pool, leaking pump, sand change — we do it. Same team handles y
 <span class="material-symbols-outlined text-[#25D366] text-3xl flex-shrink-0">support_agent</span>
 <div>
 <h4 class="font-bold text-lg mb-1">Director answers the phone</h4>
-<p class="text-white/75">Mkhacani replies personally — no call centre.</p>
+<p class="text-white/75">Mkhacani replies personally, no call centre.</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
@@ -329,20 +369,20 @@ New build, old pool, leaking pump, sand change — we do it. Same team handles y
 </div>
 <div class="grid grid-cols-12 grid-rows-2 gap-4 md:gap-6 h-[500px] md:h-[600px] scroll-reveal delay-100">
 <a class="col-span-8 row-span-2 relative overflow-hidden group rounded-2xl block" href="/gallery.html">
-<img loading="lazy" decoding="async" alt="Modern geometric pool with travertine decking — Ma Pools Construction project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/assets/images/gallery-sandhurst-residency-aerial.png"/>
+<img loading="lazy" decoding="async" alt="Modern geometric pool with travertine decking, Ma Pools Construction project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/assets/images/gallery-sandhurst-residency-aerial.png"/>
 <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A2342]/85 to-transparent p-6 md:p-8">
 <p class="text-xs font-bold tracking-[0.2em] uppercase text-white/85 mb-1">New build</p>
 <p class="text-lg md:text-xl font-bold text-white">Modern geometric pool, Gauteng</p>
 </div>
 </a>
 <a class="col-span-4 row-span-1 relative overflow-hidden group rounded-2xl block" href="/gallery.html">
-<img loading="lazy" decoding="async" alt="Poolside lounge area with white furniture — Gauteng project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/assets/images/gallery-modern-poolside-lounge.png"/>
+<img loading="lazy" decoding="async" alt="Poolside lounge area with white furniture, Gauteng project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/assets/images/gallery-modern-poolside-lounge.png"/>
 <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A2342]/85 to-transparent p-4">
 <p class="text-xs font-bold tracking-wider uppercase text-white">Pool deck</p>
 </div>
 </a>
 <a class="col-span-4 row-span-1 relative overflow-hidden group rounded-2xl block" href="/gallery.html">
-<img loading="lazy" decoding="async" alt="Mosaic tile detail — Ma Pools Construction finishing work" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/assets/images/gallery-mosaic-pool-tile-detail.png"/>
+<img loading="lazy" decoding="async" alt="Mosaic tile detail, Ma Pools Construction finishing work" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/assets/images/gallery-mosaic-pool-tile-detail.png"/>
 <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0A2342]/85 to-transparent p-4">
 <p class="text-xs font-bold tracking-wider uppercase text-white">Tile finish</p>
 </div>
@@ -355,7 +395,7 @@ New build, old pool, leaking pump, sand change — we do it. Same team handles y
 <div class="max-w-[1280px] mx-auto text-center scroll-reveal">
 <div class="space-y-3 mb-8">
 <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#0A2342]/70">Where we work</span>
-<h2 class="text-2xl md:text-3xl font-extrabold text-[#0A2342]">All of Gauteng — and these are just some of the suburbs we cover.</h2>
+<h2 class="text-2xl md:text-3xl font-extrabold text-[#0A2342]">All of Gauteng, and these are just some of the suburbs we cover.</h2>
 </div>
 <div class="flex flex-wrap justify-center gap-2 md:gap-3 max-w-3xl mx-auto">
 <span class="bg-[#0A2342] text-white px-4 py-2 rounded-full text-sm font-bold inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-base">place</span>Meadowlands · HQ</span>
@@ -404,7 +444,7 @@ Pool construction, renovations, marblite and fibreglass work, fish ponds, pump a
 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-45 flex-shrink-0">add</span>
 </summary>
 <div class="px-6 pb-6 text-slate-700 leading-relaxed">
-We're based in Meadowlands, Soweto, and we cover the whole of Gauteng — Soweto, Johannesburg, Roodepoort, Krugersdorp, Diepkloof, Orlando, Pimville, Dobsonville, Lenasia, Florida, Pretoria, Centurion, Midrand and everywhere in between. If you're not sure whether we cover your area, send a quick WhatsApp and we'll confirm.
+We're based in Meadowlands, Soweto, and we cover the whole of Gauteng, Soweto, Johannesburg, Roodepoort, Krugersdorp, Diepkloof, Orlando, Pimville, Dobsonville, Lenasia, Florida, Pretoria, Centurion, Midrand and everywhere in between. If you're not sure whether we cover your area, send a quick WhatsApp and we'll confirm.
 </div>
 </details>
 
@@ -414,7 +454,7 @@ We're based in Meadowlands, Soweto, and we cover the whole of Gauteng — Soweto
 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-45 flex-shrink-0">add</span>
 </summary>
 <div class="px-6 pb-6 text-slate-700 leading-relaxed">
-Within one business day, often the same day. WhatsApp a photo of your pool, paving area or whatever needs work, with a brief description, and Mkhacani comes back with a price. For bigger jobs (new builds, full renovations) we may book an on-site visit before quoting — also free, also fast.
+Within one business day, often the same day. WhatsApp a photo of your pool, paving area or whatever needs work, with a brief description, and Mkhacani comes back with a price. For bigger jobs (new builds, full renovations) we may book an on-site visit before quoting, also free, also fast.
 </div>
 </details>
 
@@ -424,7 +464,7 @@ Within one business day, often the same day. WhatsApp a photo of your pool, pavi
 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-45 flex-shrink-0">add</span>
 </summary>
 <div class="px-6 pb-6 text-slate-700 leading-relaxed">
-No. Quotes are free and there's no obligation. If you don't like the number, walk away — no awkward follow-ups.
+No. Quotes are free and there's no obligation. If you don't like the number, walk away, no awkward follow-ups.
 </div>
 </details>
 
@@ -434,7 +474,7 @@ No. Quotes are free and there's no obligation. If you don't like the number, wal
 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-45 flex-shrink-0">add</span>
 </summary>
 <div class="px-6 pb-6 text-slate-700 leading-relaxed">
-Mkhacani Amos Chauke — the founder and operating director. He answers WhatsApps and phone calls personally. No call centres, no middlemen, no chasing the office to find out what's happening on your job.
+Mkhacani Amos Chauke, the founder and operating director. He answers WhatsApps and phone calls personally. No call centres, no middlemen, no chasing the office to find out what's happening on your job.
 </div>
 </details>
 
@@ -444,7 +484,7 @@ Mkhacani Amos Chauke — the founder and operating director. He answers WhatsApp
 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-45 flex-shrink-0">add</span>
 </summary>
 <div class="px-6 pb-6 text-slate-700 leading-relaxed">
-Yes. We run weekly, fortnightly and monthly service plans — water testing, chemical balancing, filter checks, the works. Tell us your pool size and how often you want a visit and we'll quote a flat monthly amount.
+Yes. We run weekly, fortnightly and monthly service plans, water testing, chemical balancing, filter checks, the works. Tell us your pool size and how often you want a visit and we'll quote a flat monthly amount.
 </div>
 </details>
 
@@ -464,13 +504,13 @@ Yes. Workmanship is guaranteed and any equipment we install is covered by the su
 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-45 flex-shrink-0">add</span>
 </summary>
 <div class="px-6 pb-6 text-slate-700 leading-relaxed">
-Because pools rarely live alone. Most of our customers also need their deck repaved, their tile work redone, their plumbing rerouted, or their garden tidied around the new pool. Doing it ourselves means one accountable contractor instead of three different guys you have to chase. Pool is what we lead with — but we handle the whole job.
+Because pools rarely live alone. Most of our customers also need their deck repaved, their tile work redone, their plumbing rerouted, or their garden tidied around the new pool. Doing it ourselves means one accountable contractor instead of three different guys you have to chase. Pool is what we lead with, but we handle the whole job.
 </div>
 </details>
 </div>
 
 <div class="text-center mt-10 md:mt-12">
-<p class="text-sm text-slate-600">Question we haven't answered? <a class="font-semibold text-[#0A2342] underline hover:no-underline" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%2C%20I%20have%20a%20question%3A%20" target="_blank" rel="noopener">Ask on WhatsApp</a> — Mkhacani replies personally.</p>
+<p class="text-sm text-slate-600">Question we haven't answered? <a class="font-semibold text-[#0A2342] underline hover:no-underline" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%2C%20I%20have%20a%20question%3A%20" target="_blank" rel="noopener">Ask on WhatsApp</a>, Mkhacani replies personally.</p>
 </div>
 </div>
 </section>
@@ -482,7 +522,7 @@ Because pools rarely live alone. Most of our customers also need their deck repa
 <span class="text-xs font-bold tracking-[0.2em] uppercase text-[#0A2342]/70">Get a free quote</span>
 <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight text-[#0A2342]">Send us a photo. We'll send back a quote.</h2>
 <p class="text-base md:text-lg text-slate-700 leading-relaxed max-w-xl mx-auto">
-WhatsApp is fastest — Mkhacani replies personally within one business day.
+WhatsApp is fastest, Mkhacani replies personally within one business day.
 </p>
 <div class="flex flex-wrap gap-3 justify-center pt-2">
 <a class="bg-[#25D366] hover:bg-[#1ebe57] text-white px-7 py-4 rounded-full text-sm font-bold tracking-wide uppercase shadow-lg active:scale-95 transition-all inline-flex items-center gap-2" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener" role="button">
@@ -519,10 +559,10 @@ Or email <a class="font-semibold text-[#0A2342] underline hover:no-underline" hr
 <p class="font-serif text-sm tracking-widest uppercase text-[#0A2342]">Visit</p>
 </div>
 <address class="not-italic font-serif text-sm leading-relaxed text-slate-600">
-                331B Utekwane Street, Zone 7<br/>
-                Meadowlands, 1852<br/>
-                Soweto, Gauteng
-            </address>
+ 331B Utekwane Street, Zone 7<br/>
+ Meadowlands, 1852<br/>
+ Soweto, Gauteng
+ </address>
 </div>
 <div class="space-y-4">
 <div class="flex items-center gap-2">
@@ -559,17 +599,17 @@ Or email <a class="font-semibold text-[#0A2342] underline hover:no-underline" hr
 <!-- AE:FOOTER:END -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-    
-    document.querySelectorAll('.scroll-reveal').forEach((el) => {
-        observer.observe(el);
-    });
+ const observer = new IntersectionObserver((entries) => {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) {
+ entry.target.classList.add('visible');
+ }
+ });
+ }, { threshold: 0.1 });
+ 
+ document.querySelectorAll('.scroll-reveal').forEach((el) => {
+ observer.observe(el);
+ });
 });
 </script>
 
@@ -593,110 +633,146 @@ WhatsApp
 <!-- AE:MOBILE-NAV-JS:START -->
 <script>
 (function(){
-  var ns = (window.maMobileNav = window.maMobileNav || {});
-  if (ns._installed) { ns.init && ns.init(); return; }
-  ns._installed = true;
+ var ns = (window.maMobileNav = window.maMobileNav || {});
+ if (ns._installed) { ns.init && ns.init(); return; }
+ ns._installed = true;
 
-  ns.init = function init(){
-    var trigger = document.getElementById('mobile-nav-trigger');
-    var panel = document.getElementById('mobile-nav-panel');
-    if (!trigger || !panel) return;
-    if (trigger.dataset.maBound === '1') return;
-    trigger.dataset.maBound = '1';
+ ns.init = function init(){
+ var trigger = document.getElementById('mobile-nav-trigger');
+ var panel = document.getElementById('mobile-nav-panel');
+ if (!trigger || !panel) return;
+ if (trigger.dataset.maBound === '1') return;
+ trigger.dataset.maBound = '1';
 
-    var icon = trigger.querySelector('[data-mobile-nav-icon]');
-    var body = document.body;
-    var lastFocus = null;
-    var isOpen = false;
+ var icon = trigger.querySelector('[data-mobile-nav-icon]');
+ var body = document.body;
+ var lastFocus = null;
+ var isOpen = false;
 
-    function focusable(){
-      return Array.prototype.slice.call(panel.querySelectorAll(
-        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
-      ));
-    }
+ function focusable(){
+ return Array.prototype.slice.call(panel.querySelectorAll(
+ 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+ ));
+ }
 
-    function open(){
-      if (isOpen) return;
-      isOpen = true;
-      lastFocus = document.activeElement;
-      panel.hidden = false;
-      void panel.offsetWidth;
-      panel.classList.remove('opacity-0','-translate-y-2','pointer-events-none');
-      panel.classList.add('opacity-100','translate-y-0');
-      trigger.setAttribute('aria-expanded','true');
-      trigger.setAttribute('aria-label','Close menu');
-      if (icon) icon.textContent = 'close';
-      body.classList.add('overflow-hidden');
-      document.addEventListener('keydown', onKey, true);
-      document.addEventListener('mousedown', onOutside, true);
-      document.addEventListener('touchstart', onOutside, true);
-      var first = focusable()[0];
-      if (first) setTimeout(function(){ first.focus(); }, 0);
-    }
+ function open(){
+ if (isOpen) return;
+ isOpen = true;
+ lastFocus = document.activeElement;
+ panel.hidden = false;
+ void panel.offsetWidth;
+ panel.classList.remove('opacity-0','-translate-y-2','pointer-events-none');
+ panel.classList.add('opacity-100','translate-y-0');
+ trigger.setAttribute('aria-expanded','true');
+ trigger.setAttribute('aria-label','Close menu');
+ if (icon) icon.textContent = 'close';
+ body.classList.add('overflow-hidden');
+ document.addEventListener('keydown', onKey, true);
+ document.addEventListener('mousedown', onOutside, true);
+ document.addEventListener('touchstart', onOutside, true);
+ var first = focusable()[0];
+ if (first) setTimeout(function(){ first.focus(); }, 0);
+ }
 
-    function close(returnFocus){
-      if (!isOpen) return;
-      isOpen = false;
-      panel.classList.add('opacity-0','-translate-y-2','pointer-events-none');
-      panel.classList.remove('opacity-100','translate-y-0');
-      trigger.setAttribute('aria-expanded','false');
-      trigger.setAttribute('aria-label','Open menu');
-      if (icon) icon.textContent = 'menu';
-      body.classList.remove('overflow-hidden');
-      document.removeEventListener('keydown', onKey, true);
-      document.removeEventListener('mousedown', onOutside, true);
-      document.removeEventListener('touchstart', onOutside, true);
-      var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var delay = reduced ? 0 : 220;
-      setTimeout(function(){ if (!isOpen) panel.hidden = true; }, delay);
-      if (returnFocus !== false && lastFocus && lastFocus.focus) {
-        try { lastFocus.focus(); } catch(e){}
-      }
-    }
+ function close(returnFocus){
+ if (!isOpen) return;
+ isOpen = false;
+ panel.classList.add('opacity-0','-translate-y-2','pointer-events-none');
+ panel.classList.remove('opacity-100','translate-y-0');
+ trigger.setAttribute('aria-expanded','false');
+ trigger.setAttribute('aria-label','Open menu');
+ if (icon) icon.textContent = 'menu';
+ body.classList.remove('overflow-hidden');
+ document.removeEventListener('keydown', onKey, true);
+ document.removeEventListener('mousedown', onOutside, true);
+ document.removeEventListener('touchstart', onOutside, true);
+ var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var delay = reduced ? 0 : 220;
+ setTimeout(function(){ if (!isOpen) panel.hidden = true; }, delay);
+ if (returnFocus !== false && lastFocus && lastFocus.focus) {
+ try { lastFocus.focus(); } catch(e){}
+ }
+ }
 
-    function toggle(){ isOpen ? close() : open(); }
+ function toggle(){ isOpen ? close() : open(); }
 
-    function onKey(e){
-      if (e.key === 'Escape' || e.keyCode === 27){
-        e.preventDefault();
-        close();
-        return;
-      }
-      if (e.key === 'Tab' || e.keyCode === 9){
-        var f = focusable();
-        if (!f.length) { e.preventDefault(); return; }
-        var first = f[0], last = f[f.length-1];
-        if (e.shiftKey && document.activeElement === first){
-          e.preventDefault(); last.focus();
-        } else if (!e.shiftKey && document.activeElement === last){
-          e.preventDefault(); first.focus();
-        }
-      }
-    }
+ function onKey(e){
+ if (e.key === 'Escape' || e.keyCode === 27){
+ e.preventDefault();
+ close();
+ return;
+ }
+ if (e.key === 'Tab' || e.keyCode === 9){
+ var f = focusable();
+ if (!f.length) { e.preventDefault(); return; }
+ var first = f[0], last = f[f.length-1];
+ if (e.shiftKey && document.activeElement === first){
+ e.preventDefault(); last.focus();
+ } else if (!e.shiftKey && document.activeElement === last){
+ e.preventDefault(); first.focus();
+ }
+ }
+ }
 
-    function onOutside(e){
-      if (!isOpen) return;
-      if (panel.contains(e.target) || trigger.contains(e.target)) return;
-      close(false);
-    }
+ function onOutside(e){
+ if (!isOpen) return;
+ if (panel.contains(e.target) || trigger.contains(e.target)) return;
+ close(false);
+ }
 
-    trigger.addEventListener('click', function(e){ e.preventDefault(); toggle(); });
-    panel.addEventListener('click', function(e){
-      var a = e.target.closest('a');
-      if (a) close(false);
-    });
-    var mq = window.matchMedia('(min-width: 768px)');
-    var onMQ = function(){ if (mq.matches) close(false); };
-    if (mq.addEventListener) mq.addEventListener('change', onMQ);
-    else if (mq.addListener) mq.addListener(onMQ);
-  };
+ trigger.addEventListener('click', function(e){ e.preventDefault(); toggle(); });
+ panel.addEventListener('click', function(e){
+ var a = e.target.closest('a');
+ if (a) close(false);
+ });
+ var mq = window.matchMedia('(min-width: 768px)');
+ var onMQ = function(){ if (mq.matches) close(false); };
+ if (mq.addEventListener) mq.addEventListener('change', onMQ);
+ else if (mq.addListener) mq.addListener(onMQ);
+ };
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ns.init);
-  } else {
-    ns.init();
-  }
+ if (document.readyState === 'loading') {
+ document.addEventListener('DOMContentLoaded', ns.init);
+ } else {
+ ns.init();
+ }
 })();
 </script>
 <!-- AE:MOBILE-NAV-JS:END -->
+<!-- AE:CURSOR:START -->
+<script>
+(function(){
+  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  if (window.maCursorOn) return; window.maCursorOn = true;
+  document.body.classList.add('ma-cursor-on');
+  var dot = document.createElement('div'); dot.className = 'ma-cursor-dot';
+  var ring = document.createElement('div'); ring.className = 'ma-cursor-ring';
+  document.body.appendChild(dot); document.body.appendChild(ring);
+  var mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', function(e){
+    mx = e.clientX; my = e.clientY;
+    dot.style.transform = 'translate3d(' + mx + 'px,' + my + 'px,0) translate(-50%,-50%)';
+  }, { passive: true });
+  (function loop(){
+    rx += (mx - rx) * 0.18;
+    ry += (my - ry) * 0.18;
+    ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0) translate(-50%,-50%)';
+    requestAnimationFrame(loop);
+  })();
+  var sel = 'a, button, [role="button"], summary, label, [data-cursor="active"]';
+  document.addEventListener('mouseover', function(e){
+    if (e.target && e.target.closest && e.target.closest(sel)) ring.classList.add('active');
+  });
+  document.addEventListener('mouseout', function(e){
+    if (e.target && e.target.closest && e.target.closest(sel)) ring.classList.remove('active');
+  });
+  document.addEventListener('mouseleave', function(){
+    dot.style.opacity = ring.style.opacity = '0';
+  });
+  document.addEventListener('mouseenter', function(){
+    dot.style.opacity = ring.style.opacity = '1';
+  });
+})();
+</script>
+<!-- AE:CURSOR:END -->
 </body></html>
