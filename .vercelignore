@@ -1,0 +1,9 @@
+_archive/
+_design_reference/
+_dev/
+project_requirements_premium_pool_care.md
+CLAUDE.md
+tasks/
+.DS_Store
+node_modules/
+*.py

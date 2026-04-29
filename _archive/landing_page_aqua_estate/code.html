@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;family=Noto+Serif:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d5e3ff",
+                    "outline": "#74777e",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary-container": "#a78541",
+                    "error": "#ba1a1a",
+                    "surface": "#f7fafd",
+                    "inverse-primary": "#b2c7ef",
+                    "inverse-surface": "#2d3134",
+                    "primary": "#000d22",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "secondary-container": "#dfe0e0",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "primary-fixed-dim": "#b2c7ef",
+                    "on-secondary-container": "#616363",
+                    "surface-container-high": "#e5e8ec",
+                    "on-tertiary-fixed": "#261900",
+                    "on-secondary-fixed-variant": "#454747",
+                    "surface-container": "#ebeef2",
+                    "tertiary-container": "#302000",
+                    "on-surface": "#181c1f",
+                    "on-secondary": "#ffffff",
+                    "surface-bright": "#f7fafd",
+                    "on-primary-container": "#768baf",
+                    "on-primary-fixed": "#021c3a",
+                    "secondary": "#5d5f5f",
+                    "surface-tint": "#4a5f81",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#eef1f4",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#c4c6cf",
+                    "surface-container-highest": "#e0e3e6",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#140b00",
+                    "tertiary-fixed": "#ffdea5",
+                    "primary-container": "#0a2342",
+                    "secondary-fixed": "#e2e2e2",
+                    "on-background": "#181c1f",
+                    "background": "#f7fafd",
+                    "surface-dim": "#d7dade",
+                    "on-primary-fixed-variant": "#324768",
+                    "surface-variant": "#e0e3e6",
+                    "surface-container-low": "#f1f4f7",
+                    "on-surface-variant": "#44474e",
+                    "secondary-fixed-dim": "#c6c6c7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "container-max": "1280px",
+                    "gutter": "32px",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                    "body-md": ["Manrope"],
+                    "label-upper": ["Manrope"],
+                    "body-lg": ["Manrope"],
+                    "headline-lg": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "display-xl": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-upper": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-stamp {
+            border: 1px solid #e9c176;
+            color: #a78541;
+            padding: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 10px;
+            font-weight: 800;
+        }
+        .luxury-hover:hover {
+            border-bottom: 2px solid #e9c176;
+        }
+        .backdrop-glass {
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-[#0A2342]/5 shadow-[0_0_20px_0px_rgba(10,35,66,0.04)]">
+<div class="flex justify-between items-center px-20 py-8 max-w-[1440px] mx-auto">
+<div class="text-2xl font-semibold text-[#0A2342] dark:text-white uppercase tracking-widest font-['Noto_Serif']">
+                AQUA ESTATE
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors duration-300 font-['Noto_Serif'] tracking-tight" href="#services">Services</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors duration-300 font-['Noto_Serif'] tracking-tight" href="#testimonials">Testimonials</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors duration-300 font-['Noto_Serif'] tracking-tight" href="#gallery">Gallery</a>
+<button class="bg-primary-container text-on-primary px-8 py-3 rounded-none font-label-upper luxury-hover active:scale-95 transition-transform duration-300">
+                    Book Now
+                </button>
+</div>
+</div>
+</nav>
+<main>
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury pool at dusk" class="w-full h-full object-cover" data-alt="Modern architectural infinity pool at sunset overlooking a lush Gauteng valley with warm glowing lights and deep blue water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGuUgwyWtC-bufTZ4gqcRQpi6eznubQw2XY-LJBfXT5LHDY5qCixN6AQmbfi8Qs81_d9mjlQfMc9Ih50AMO987HGEI0fESwxbUBpWsyum3KrloFV8Bj-XDDCVnGTKGLLaoONLG3CRuk3gw51If4DhbiApESZ475XpQC86YmOEBJCYiOai2Cnd1axRVA1uZXX_buO25CdMti2bUPsMqLYCaD-UsFNewlZXQJ-ZnCOjBteeuhC0Pj3q_FCY37eWRvVVSu08v9nF95Xr"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-20 max-w-[1440px] mx-auto w-full">
+<div class="max-w-2xl space-y-8">
+<div class="signature-stamp">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Gauteng's Premier Certification
+                    </div>
+<h1 class="font-display-xl text-display-xl text-white">
+                        Curating Pristine Serenity for Elite Estates
+                    </h1>
+<p class="font-body-lg text-body-lg text-white/80 max-w-lg">
+                        Uncompromising pool maintenance for the architectural gems of Gauteng. Precision engineering meets aesthetic perfection.
+                    </p>
+<div class="flex gap-6 pt-4">
+<button class="bg-primary text-white px-10 py-5 font-label-upper luxury-hover active:scale-95 transition-all">
+                            Request Exclusive Consult
+                        </button>
+<button class="border border-white/30 text-white px-10 py-5 font-label-upper backdrop-blur-sm hover:bg-white/10 transition-all">
+                            Our Portfolio
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-[160px] px-20 max-w-[1440px] mx-auto" id="services">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-xl space-y-4">
+<span class="font-label-upper text-on-tertiary-container">PREMIUM SERVICES</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Architectural Care Solutions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We provide a bespoke maintenance ecosystem designed specifically for high-capacity, luxury residential pools.</p>
+</div>
+<div class="pb-2">
+<a class="font-label-upper text-primary-container border-b-2 border-primary-container/20 hover:border-primary-container transition-all pb-2" href="#">VIEW ALL PACKAGES</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<div class="group bg-white border border-outline-variant p-10 hover:shadow-[0_0_40px_0px_rgba(10,35,66,0.06)] transition-all duration-500 cursor-pointer">
+<div class="mb-8 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary-container">Crystal Clarity System</h3>
+<p class="text-on-surface-variant mb-8">Our proprietary 12-point chemical balancing protocol ensures water that is not just clear, but therapeutically pure.</p>
+<div class="w-full h-px bg-outline-variant/30 group-hover:bg-tertiary-fixed-dim transition-colors"></div>
+<ul class="mt-8 space-y-3 font-body-md text-on-surface-variant opacity-70 group-hover:opacity-100 transition-opacity">
+<li>• UV-C Sanitation Calibration</li>
+<li>• Mineral Content Optimization</li>
+<li>• Weekly Debris Removal</li>
+</ul>
+</div>
+<div class="group bg-white border border-outline-variant p-10 hover:shadow-[0_0_40px_0px_rgba(10,35,66,0.06)] transition-all duration-500 cursor-pointer">
+<div class="mb-8 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary-container">Technical Integrity</h3>
+<p class="text-on-surface-variant mb-8">Preventative mechanical maintenance for pumps, filters, and heating systems by certified technicians.</p>
+<div class="w-full h-px bg-outline-variant/30 group-hover:bg-tertiary-fixed-dim transition-colors"></div>
+<ul class="mt-8 space-y-3 font-body-md text-on-surface-variant opacity-70 group-hover:opacity-100 transition-opacity">
+<li>• Filter Backwash &amp; Degrease</li>
+<li>• Pump Impeller Inspection</li>
+<li>• Heating System Calibration</li>
+</ul>
+</div>
+<div class="group bg-white border border-outline-variant p-10 hover:shadow-[0_0_40px_0px_rgba(10,35,66,0.06)] transition-all duration-500 cursor-pointer">
+<div class="mb-8 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="concierge">concierge</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 text-primary-container">Estate Concierge</h3>
+<p class="text-on-surface-variant mb-8">A fully managed service where you never have to think about your pool again. Total peace of mind.</p>
+<div class="w-full h-px bg-outline-variant/30 group-hover:bg-tertiary-fixed-dim transition-colors"></div>
+<ul class="mt-8 space-y-3 font-body-md text-on-surface-variant opacity-70 group-hover:opacity-100 transition-opacity">
+<li>• 24/7 Priority Emergency Support</li>
+<li>• Monthly Performance Audits</li>
+<li>• Signature Gold Certification</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="relative py-[160px] bg-primary-container text-white overflow-hidden">
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-30">
+<img alt="Luxury pool detail" class="w-full h-full object-cover" data-alt="High-resolution close up of sparkling blue pool water surface with elegant stone tiling under sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCokfJjW_FeiH72YE58bb65bikdBeBx86yy9Rh6XLOkGkHuBaiN4F1Su4if9AJ5_qyUGvVe1PfegvVRR5ir-Ki_bisu3caFo6L_i9NTZjp_pLMrKUROjVCDSK94KvT4Z1uuwqAm1NsdJRJ4i4eZluCle4LmUJvL8sDxjJUU6uZSDIukCqkZcf5EuYYY5mLNOdiZ8LWRrrKsp0yuftWk5ULGLvch3e0mvkxk3IyJw0stHeJDTcmWLTc2qXD3ebMi99SMvKAAbBFTn6KU"/>
+</div>
+<div class="relative z-10 px-20 max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+<div class="space-y-10">
+<span class="font-label-upper text-tertiary-fixed-dim">THE VALUE PROPOSITION</span>
+<h2 class="font-headline-lg text-headline-lg leading-tight">Beyond Maintenance: Asset Preservation</h2>
+<p class="font-body-lg text-body-lg text-white/70">
+                        A luxury pool is more than a recreational space; it is a significant architectural asset. Our technicians are trained in the specific requirements of Gauteng’s climate, ensuring your investment remains in immaculate condition year-round.
+                    </p>
+<div class="flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="font-body-md font-bold">State-of-the-art Diagnostics</h4>
+<p class="text-white/60">Digital water testing for precise chemical levels.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="font-body-md font-bold">Unobtrusive Service</h4>
+<p class="text-white/60">Scheduled visits that respect the privacy of your home.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-[160px] px-20 max-w-[1440px] mx-auto" id="gallery">
+<div class="text-center mb-24 space-y-4">
+<span class="font-label-upper text-on-tertiary-container">PORTFOLIO</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Exemplary Estates</h2>
+</div>
+<div class="grid grid-cols-12 grid-rows-2 gap-4 h-[800px]">
+<div class="col-span-8 row-span-2 relative overflow-hidden group">
+<img alt="Mansion Pool" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Stunning aerial view of a geometric modern pool integrated into a minimalist luxury estate with travertine tiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfeq8idaVPw7vauhmcjfLWp6Tdj40_f41nH7R46C2chYDhtpSd2sNsZnGKdE93W4GKDOaAilvXHeKC6r8AJv8XttEsqX_zPV8LnlAR8lWeFqmjtfjVQYorNQURXLvE1NaDLwmQk4X7YQGubIJ4_M_2gNTA_c8vvYbfoCjzDwoaAZk8oAX2rTf4L56RE0xPpM2ATQIhQCsLsbXYBdkgTgGnfUX9xpmZZWNlB0-qOhNsD3nHXVgvBhkgA_vqDst5IyHl9GwMUKvLoJBT"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-10">
+<span class="bg-white px-6 py-3 font-label-upper text-primary">Sandhurst Residency</span>
+</div>
+</div>
+<div class="col-span-4 row-span-1 relative overflow-hidden group">
+<img alt="Modern Patio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury poolside lounge area with modern white furniture and a clean blue pool under bright sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo0yCVjZgnr1xnMXkBe7JE4rogubZpJDpGranslhII9yN-NXefnFu1wVPeAWii8LjYlURV0hW9WFTyEiHbVCTFr13N-Eu6S_AIcMwieh8vYFRbXUuE3Q2qtGJmhTAW9-DwV19TMFmmhInxYzgbWs_RjInv_SPZJFrWg_bggIPdsefpsc3C7A8Y1MJItwFg7W45B9YDQghbneqeB1SZVsXLpXruyz4gQBCKCJCjnagsTZSilsgXv_vkjzBedHeY9zgVRR2BuKXgUW61"/>
+</div>
+<div class="col-span-4 row-span-1 relative overflow-hidden group">
+<img alt="Pool Detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of elegant mosaic pool tiles under water with shimmering light patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdCXDdt4S9_ya5YiBqe014sVhT5UX15Xx8gpxs5lHW-ZSsYKieVqjNe5PN1uhsJLUvQ8SPOSXRJBY_wp0ORXfs324ydbPI_S-Thg-FBh4whZCGpp_dnsn3XR1qxX9hBStjnizqmyx0_B7qtqD7PhlrfEA2g6Irq6N3_t9wQ19MbUtBLCoqaYMWmY7PNwwyoFFYlKEpVEqOyIjW7871TzlgaA8uTOy8GRiQ8fZ6BALOVRwW0x5Hwm0QVbWF4JMMEhnaW6O5Mrea-H-G"/>
+</div>
+</div>
+</section>
+<section class="py-[160px] bg-surface" id="booking">
+<div class="px-20 max-w-[1440px] mx-auto">
+<div class="bg-white border border-outline-variant p-20 flex flex-col items-center text-center space-y-10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.03)]">
+<div class="signature-stamp border-tertiary-fixed-dim text-on-tertiary-container">
+<span class="material-symbols-outlined">schedule</span>
+                        Limited Availability
+                    </div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container max-w-2xl">
+                        Schedule Your Exclusive Water Quality Consultation
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Enter your details below and our lead technician will contact you to arrange a comprehensive audit of your estate's pool system.
+                    </p>
+<form class="w-full max-w-md space-y-8 mt-10">
+<div class="relative">
+<label class="absolute -top-3 left-0 font-label-upper text-primary-container/60">FULL NAME</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary-container focus:ring-0 px-0 py-3 font-body-md transition-all" placeholder="Enter your full name" type="text"/>
+</div>
+<div class="relative">
+<label class="absolute -top-3 left-0 font-label-upper text-primary-container/60">ESTATE LOCATION</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary-container focus:ring-0 px-0 py-3 font-body-md transition-all" placeholder="e.g. Bryanston, Sandhurst" type="text"/>
+</div>
+<button class="w-full bg-primary-container text-white py-6 font-label-upper tracking-widest luxury-hover active:scale-[0.98] transition-all" type="submit">
+                            REQUEST CONSULTATION
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white border-t border-slate-100 dark:bg-slate-950 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-20 py-32 max-w-[1440px] mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-bold text-[#0A2342] dark:text-white uppercase tracking-widest font-['Noto_Serif']">AQUA ESTATE</div>
+<p class="font-body-md text-slate-500 max-w-xs font-['Noto_Serif'] leading-relaxed">Premier pool maintenance services for Gauteng's most exclusive private residences.</p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h4 class="font-label-upper text-[#0A2342]">Navigation</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#0A2342] hover:translate-x-1 transition-transform duration-200 cursor-pointer block font-['Noto_Serif']" href="#">Services</a></li>
+<li><a class="text-slate-500 hover:text-[#0A2342] hover:translate-x-1 transition-transform duration-200 cursor-pointer block font-['Noto_Serif']" href="#">Booking</a></li>
+<li><a class="text-slate-500 hover:text-[#0A2342] hover:translate-x-1 transition-transform duration-200 cursor-pointer block font-['Noto_Serif']" href="#">Gallery</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-upper text-[#0A2342]">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-[#0A2342] hover:translate-x-1 transition-transform duration-200 cursor-pointer block font-['Noto_Serif']" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-[#0A2342] hover:translate-x-1 transition-transform duration-200 cursor-pointer block font-['Noto_Serif']" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-[#0A2342] hover:translate-x-1 transition-transform duration-200 cursor-pointer block font-['Noto_Serif']" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-label-upper text-[#0A2342]">Headquarters</h4>
+<p class="text-slate-500 font-['Noto_Serif'] leading-relaxed">
+                    Sandton Tower, Office 402<br/>
+                    Johannesburg, South Africa
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-primary-container cursor-pointer" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<div class="px-20 py-8 border-t border-slate-100 text-center text-slate-400 font-label-upper text-[10px]">
+            © 2024 Aqua Estate Gauteng. Premier Pool Maintenance.
+        </div>
+</footer>
+</body></html>

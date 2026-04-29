@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d5e3ff",
+                        "outline": "#74777e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "on-tertiary-container": "#a78541",
+                        "error": "#ba1a1a",
+                        "surface": "#f8f9ff",
+                        "inverse-primary": "#b2c7ef",
+                        "inverse-surface": "#2d3134",
+                        "primary": "#000d22",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "secondary-container": "#dfe0e0",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "primary-fixed-dim": "#b2c7ef",
+                        "on-secondary-container": "#616363",
+                        "surface-container-high": "#e5e8ec",
+                        "on-tertiary-fixed": "#261900",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-container": "#ebeef2",
+                        "tertiary-container": "#302000",
+                        "on-surface": "#181c1f",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "on-primary-container": "#768baf",
+                        "on-primary-fixed": "#021c3a",
+                        "secondary": "#5d5f5f",
+                        "surface-tint": "#4a5f81",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#eef1f4",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c4c6cf",
+                        "surface-container-highest": "#e0e3e6",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#140b00",
+                        "tertiary-fixed": "#ffdea5",
+                        "primary-container": "#0a2342",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-background": "#181c1f",
+                        "background": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "on-primary-fixed-variant": "#324768",
+                        "surface-variant": "#e0e3e6",
+                        "surface-container-low": "#eff4ff",
+                        "on-surface-variant": "#44474e",
+                        "secondary-fixed-dim": "#c6c6c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "gutter": "32px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Manrope"],
+                        "label-upper": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "display-xl": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-upper": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .signature-seal {
+            border: 1px solid #e9c176;
+            position: relative;
+            border-radius: 50%;
+        }
+        .signature-seal::after {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border: 1px solid #e9c176;
+            opacity: 0.3;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] z-50 flex justify-between items-center px-8 py-3 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-full border border-white/20 dark:border-slate-700/30 max-w-[1280px] mt-6 shadow-[0_20px_50px_rgba(10,35,66,0.05)] dark:shadow-none">
+<div class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342] dark:text-white uppercase">
+        AQUA ESTATE
+    </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-serif text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors" href="#">Pools</a>
+<a class="font-serif text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors" href="#">Services</a>
+<a class="font-serif text-sm tracking-wide uppercase text-[#0A2342] dark:text-white font-bold border-b border-[#0A2342] dark:border-white pb-1" href="#">Estates</a>
+<a class="font-serif text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors" href="#">Gallery</a>
+<a class="font-serif text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors" href="#">Contact</a>
+<button class="bg-primary-container text-white px-6 py-2 rounded-full font-serif text-sm tracking-wide uppercase hover:scale-[1.02] active:scale-95 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+            Book a Consult
+        </button>
+</div>
+</nav>
+<main class="pt-48">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-20 mb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-end">
+<div>
+<span class="font-label-upper text-on-tertiary-container uppercase mb-4 block">Client Perspectives</span>
+<h1 class="font-display-xl text-display-xl text-primary leading-none mb-8">Voices of <br/>Pristine Luxury.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Discover why Gauteng's most exclusive estates trust Aqua Estate for their aquatic architectural maintenance and water clarity.
+                    </p>
+</div>
+<div class="flex flex-col items-end">
+<div class="signature-seal w-32 h-32 flex flex-col items-center justify-center gap-2 mb-8 rounded-full">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-upper text-[10px] text-tertiary-fixed-dim text-center leading-tight">CERTIFIED<br/>EXCELLENCE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Testimonial Bento -->
+<section class="max-w-[1440px] mx-auto px-20 mb-40">
+<div class="grid grid-cols-12 gap-6 h-[700px]">
+<!-- Main Feature -->
+<div class="col-span-7 bg-white p-12 flex flex-col justify-between rounded-2xl border border-slate-100 shadow-sm hover:shadow-[0_20px_50px_rgba(10,35,66,0.05)] transition-all duration-500">
+<div>
+<span class="material-symbols-outlined text-primary-container text-4xl mb-8">format_quote</span>
+<blockquote class="font-headline-lg text-headline-lg text-primary italic leading-tight mb-12">
+                            "The level of professionalism displayed by Aqua Estate is unmatched in Gauteng. My pool has never looked more inviting, and the peace of mind they provide is priceless."
+                        </blockquote>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full overflow-hidden">
+<img alt="Client Portrait" class="w-full h-full object-cover" data-alt="Close-up portrait of a sophisticated middle-aged man in a linen shirt, soft natural lighting, high-end lifestyle aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADBHx6SvRnJXLljfyN1G-7Xfg9TpA5z9A0N1YhoPSz_4qWNqBN0qQouv2DGkln2NjRmHadlfv86GfMDTQ_zE-_YnEA8J4IKmg2N5MQZS2_VtR6I2fqJx7xiRTI-wnakZK6rED9TlL0n-f34CRzwjlkP93PZARPpIsQ_Qd9Eif7stCaBWh0o1AqD131sEckAR2qLNckTey2qRD2Soo3LtNtAcR5B2InftknyqoY9LnP2aOOrnHHALSS_uSxwxgHFcDUMU2QZ7ePTRqR"/>
+</div>
+<div>
+<p class="font-label-upper text-primary">DR. ALISTAIR VANCE</p>
+<p class="font-body-md text-on-surface-variant">Sandhurst Estate</p>
+</div>
+</div>
+</div>
+<!-- Visual Anchor -->
+<div class="col-span-5 relative overflow-hidden group rounded-2xl">
+<img alt="Luxury Pool" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Architectural infinity pool overlooking a sunset horizon, modern concrete edges, crystal clear water, minimalist luxury atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJHHG6kODzVwzxUn1wZ4wR250pchgFGpbl68OtMnC1C2r7gx-Feu0xkalm1NAEeLnWApkiKjLoShxiH79tujEK5Cm-KxT5jFbdsxWu1XAzYrSeF-kPdDCggIaJthjeIibGxnKJIllkOBOpMrByjgiY1BJciQyijfrWNAY2J-Wm19UBH48w1LnuHl4KrSRNWygEqtaBwgqt4y0MMd-ucv4NmilhC0-nD2yE7x6sVa0B3hwQT2hZsJ9k05J8et_2jj-kGwCRsQMpmwhg"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+<div class="absolute bottom-8 left-8 bg-white/90 backdrop-blur-md p-6 max-w-xs border border-white/20 rounded-xl">
+<p class="font-label-upper text-[10px] text-on-surface-variant mb-2">PROJECT LOCATION</p>
+<p class="font-headline-md text-[20px] text-primary">The Obsidian Residence</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Grid Section -->
+<section class="bg-surface py-32 border-y border-slate-100">
+<div class="max-w-[1440px] mx-auto px-20">
+<div class="text-center mb-20">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Unwavering Standards</h2>
+<div class="w-20 h-0.5 bg-tertiary-fixed-dim mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-10 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-3xl mb-6">format_quote</span>
+<p class="font-headline-md text-[22px] text-primary leading-relaxed font-serif mb-10">
+                            "Their chemical balance precision is surgical. We no longer worry about skin irritation or water clarity."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Sarah Whittaker" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeNLnpKEkgWbO3rFRVowBTmknOVSMY9Rad5w_rERzrCT93G2vgOr2PjcK66e-h-8lSN7bmglCn_BazdN5hJ-tSj3f5-2nNlhOUwTRRaKXErjZhDvf265kwG-j0UqyXO7bW9Qt2VVykODLR_-TaI6-tVE7sBmOr-_UG2up2qaOQ-D67Sx6bnPXO4XZ4u_LjKmUDlfNQs9QUZ8Iiat-iLhBasOKsqBFowVDFk9O67xudFBvViBOBMkX5IeYjCLKDrsZix31ukMuVKcZp"/>
+</div>
+<div>
+<p class="font-label-upper text-primary">SARAH WHITTAKER</p>
+<p class="font-body-md text-sm text-on-surface-variant">Bryanston Country Club</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-10 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-3xl mb-6">format_quote</span>
+<p class="font-headline-md text-[22px] text-primary leading-relaxed font-serif mb-10">
+                            "Aqua Estate doesn't just clean; they curate. The technicians are always punctual, polite, and thorough."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Marcus De Villiers" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCILTqvKay0gnItt40KpGFzIcmRxVXO_jyZ4W6cs9q0UiTJ8CWSGygmkdoVCWhXQoxgO8V6YV8ZiRxdZ5AFI7inRKFa_krV_mZ91KsxAbHdpaMRhom8HHG2se1N5dvfY3dtBc76JDhncWuGyh1_h0ixOZo669dB1Ad2XAVXgjGmwI-F6tIZ2dIpJeMVvwss3pUzKtJAd68hXAB06nAWacujF7ckhxZ6uRGANYrzEEZyFi10zK9BqlmG1seCf8BpEqaLNkHFz9974sal"/>
+</div>
+<div>
+<p class="font-label-upper text-primary">MARCUS DE VILLIERS</p>
+<p class="font-body-md text-sm text-on-surface-variant">Waterfall Equestrian</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-10 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-3xl mb-6">format_quote</span>
+<p class="font-headline-md text-[22px] text-primary leading-relaxed font-serif mb-10">
+                            "Reliability is a rare commodity. Aqua Estate has consistently exceeded our high expectations for three years."
+                        </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Elena Kostas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQyTKEnzmvj5mqM1CzETurDeLQr9Oq8X-heUUWRJzZqcrA33MDEa1Q8RUZiMAr-pE01rRqISXOajTPcsiQgKPj7y7F67gzDCV5nMaN8zDGWw2kshp3FRVf7MI9KlNHLuQ0I9SWhma5nqvjnlePJoIW-v2dmhE0xHoFB1Qhikt-9EUmJYNzj3X6wU-YQ3238ATZ9lp0vSD1fg6wJ8vMqeLTp_l-7_qMXNqKJ88z0gi_cjgA7XDKkyUoDGAXKd-NqdtO6cq-LzPtVg8p"/>
+</div>
+<div>
+<p class="font-label-upper text-primary">ELENA KOSTAS</p>
+<p class="font-body-md text-sm text-on-surface-variant">Hyde Park Resident</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-[1440px] mx-auto px-20 py-40 text-center">
+<h2 class="font-display-xl text-display-xl text-primary mb-12">Experience the Clarity.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16">
+                Join our exclusive circle of clients who demand nothing less than perfection for their estates. Limited service availability for new Gauteng registrations.
+            </p>
+<div class="flex justify-center gap-8">
+<button class="bg-primary-container text-on-primary-container px-12 py-5 rounded-full font-label-upper uppercase tracking-[0.2em] border border-transparent hover:border-[#e9c176] transition-all duration-300 hover:scale-[1.02]">
+                    Request Consultation
+                </button>
+<button class="border border-outline px-12 py-5 rounded-full font-label-upper uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all duration-300 hover:scale-[1.02]">
+                    View Portfolio
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 py-20 px-8">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="flex flex-col gap-6">
+<div class="font-serif text-lg font-medium text-[#0A2342] dark:text-white">AQUA ESTATE</div>
+<p class="text-[#0A2342] dark:text-slate-200 font-serif text-sm antialiased max-w-xs">© 2024 Aqua Estate. Precision in Tranquility.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12 md:gap-24">
+<div class="flex flex-col gap-4">
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300" href="#">Philosophy</a>
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300" href="#">Sustainability</a>
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300" href="#">Legal</a>
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300" href="#">Press</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

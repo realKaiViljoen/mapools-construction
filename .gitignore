@@ -1,0 +1,30 @@
+# Local & OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.log
+
+# Dependencies (none currently, future-proof)
+node_modules/
+
+# Claude Code workspace state (user-specific, do not share)
+CLAUDE.md
+.claude/
+
+# Build output (none currently, future-proof)
+dist/
+.cache/
+.netlify/
+.vercel/

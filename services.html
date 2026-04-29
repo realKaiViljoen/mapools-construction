@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode:"class",
+            theme: {
+                extend: {"colors": {"surface":"#f8f9ff","surface-dim":"#cbdbf5","surface-bright":"#f8f9ff","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","surface-container":"#dfe8fc","surface-container-high":"#cfddf9","surface-container-highest":"#bed1f7","on-surface":"#001849","on-surface-variant":"#414754","outline":"#717885","outline-variant":"#c1c6d6","inverse-surface":"#002b74","inverse-on-surface":"#eef0ff","surface-tint":"#0a2342","primary":"#0a2342","on-primary":"#ffffff","primary-container":"#274061","on-primary-container":"#cadfec","inverse-primary":"#a6c8ff","secondary":"#2563eb","on-secondary":"#ffffff","secondary-container":"#bfd1fa","on-secondary-container":"#001a43","tertiary":"#8b5cf6","on-tertiary":"#ffffff","tertiary-container":"#dcd1fb","on-tertiary-container":"#2c1064","error":"#ba1a1a","on-error":"#ffffff","error-container":"#ffdad6","on-error-container":"#93000a","background":"#f8f9ff","on-background":"#001849"
+                    },"borderRadius": {"none":"0","sm":"0.125rem","DEFAULT":"0.25rem","md":"0.375rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","3xl":"1.5rem","full":"9999px"
+                    },"fontFamily": {"body-md": ["Noto Serif"],"label-upper": ["Noto Serif"],"body-lg": ["Noto Serif"],"headline-lg": ["Noto Serif"],"headline-md": ["Noto Serif"],"display-xl": ["Noto Serif"]
+                    },"fontSize": {"body-md": ["1rem", {"lineHeight":"1.5","fontWeight":"400"}],"label-upper": ["0.875rem", {"lineHeight":"1.25","letterSpacing":"0.05em","fontWeight":"500"}],"body-lg": ["1.125rem", {"lineHeight":"1.75","fontWeight":"400"}],"headline-lg": ["2.5rem", {"lineHeight":"1.2","fontWeight":"600"}],"headline-md": ["2rem", {"lineHeight":"1.25","fontWeight":"600"}],"display-xl": ["3.75rem", {"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-seal {
+            background: linear-gradient(135deg, #a78541 0%, #e9c176 50%, #a78541 100%);
+            -webkit-mask: radial-gradient(circle at center, transparent 65%, black 66%);
+        }
+        /* Custom Smooth Scrolling & Utilities */
+        html { scroll-behavior: smooth; }
+        .hover-card {
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .hover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(10, 35, 66, 0.1);
+        }
+    </style>
+<!-- AE:META:START -->
+<title>Services | Pool builds, renovations, plumbing, paving | Ma Pools Construction</title>
+<meta name="description" content="Pool construction, renovations, equipment installs, repairs and care across Gauteng. Plus paving, tiling, plumbing &amp; garden services. WhatsApp 065 643 0603."/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
+<link rel="canonical" href="https://www.mapoolsconstruction.co.za/services.html"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Ma Pools Construction"/>
+<meta property="og:title" content="Pool Care Services | Ma Pools Construction"/>
+<meta property="og:description" content="Pool builds, renovations, equipment, repairs &amp; service across Gauteng. WhatsApp 065 643 0603 for a free quote."/>
+<meta property="og:url" content="https://www.mapoolsconstruction.co.za/services.html"/>
+<meta property="og:image" content="https://www.mapoolsconstruction.co.za/assets/images/service-weekly-maintenance-luxury-pool.png"/>
+<meta property="og:image:alt" content="Ma Pools Construction — pool construction and care services across Gauteng"/>
+<meta property="og:locale" content="en_ZA"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@mapoolspools"/>
+<meta name="twitter:title" content="Pool Care Services | Ma Pools Construction"/>
+<meta name="twitter:description" content="Weekly maintenance, technical repairs, acid washes &amp; eco upgrades for Gauteng estates."/>
+<meta name="twitter:image" content="https://www.mapoolsconstruction.co.za/assets/images/service-weekly-maintenance-luxury-pool.png"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type": ["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://www.mapoolsconstruction.co.za/#business","name":"Ma Pools Construction","legalName":"Ma Pools Construction","description":"Pool construction, renovations, repairs and care across Gauteng — director-led.","url":"https://www.mapoolsconstruction.co.za/","logo":"https://www.mapoolsconstruction.co.za/favicon.svg","image":"https://www.mapoolsconstruction.co.za/assets/images/service-weekly-maintenance-luxury-pool.png","telephone":"+27787122157","email":"mapoolsconstruction@gmail.com","priceRange":"RRRR","slogan":"New builds, renovations, and dependable pool care across Gauteng.","address": {"@type":"PostalAddress","streetAddress":"331B Utekwane Street, Zone 7","addressLocality":"Meadowlands","addressRegion":"Gauteng","postalCode":"1852","addressCountry":"ZA"
+  },"geo": {"@type":"GeoCoordinates","latitude": -26.23080,"longitude": 27.91520
+  },"areaServed": [
+    {"@type":"AdministrativeArea","name":"Gauteng" },
+    {"@type":"City","name":"Johannesburg" },
+    {"@type":"City","name":"Soweto" },
+    {"@type":"City","name":"Roodepoort" },
+    {"@type":"City","name":"Krugersdorp" },
+    {"@type":"Place","name":"Meadowlands" },
+    {"@type":"Place","name":"Diepkloof" },
+    {"@type":"Place","name":"Orlando" },
+    {"@type":"Place","name":"Pimville" },
+    {"@type":"Place","name":"Dobsonville" },
+    {"@type":"Place","name":"Naledi" },
+    {"@type":"Place","name":"Protea Glen" },
+    {"@type":"Place","name":"Lenasia" },
+    {"@type":"Place","name":"Eldorado Park" },
+    {"@type":"Place","name":"Florida" }
+  ],"openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"17:30" },
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"13:00" }
+  ],"sameAs": ["https://www.instagram.com/mapoolsconstruction","https://www.facebook.com/mapoolsconstruction","https://www.linkedin.com/company/ma-pools-construction"
+  ]
+}
+</script>
+<script type="application/ld+json">
+[
+  {"@context":"https://schema.org","@type":"Service","@id":"https://www.mapoolsconstruction.co.za/services.html#weekly-maintenance","serviceType":"Weekly Pool Maintenance","name":"Pool Construction & Renovation","description":"New pool construction, full renovations, marblite finishing, fiberglass installation, fish pond construction, and pool cover supply & installation.","provider": {"@id":"https://www.mapoolsconstruction.co.za/#business" },"areaServed": {"@type":"AdministrativeArea","name":"Gauteng" }
+  },
+  {"@context":"https://schema.org","@type":"Service","@id":"https://www.mapoolsconstruction.co.za/services.html#technical-repairs","serviceType":"Pool Equipment Repair","name":"Technical Repairs","description":"Pump repair, leak detection, motor pump installation, filter sand changes, timer installation, jacuzzi installation and leak repair.","provider": {"@id":"https://www.mapoolsconstruction.co.za/#business" },"areaServed": {"@type":"AdministrativeArea","name":"Gauteng" }
+  },
+  {"@context":"https://schema.org","@type":"Service","@id":"https://www.mapoolsconstruction.co.za/services.html#acid-washes","serviceType":"Pool Equipment & Plumbing Installation","name":"Pool Equipment & Plumbing","description":"Pool heating systems, pool plumbing installation, motor pumps, timers, and pool covers supplied and installed.","provider": {"@id":"https://www.mapoolsconstruction.co.za/#business" },"areaServed": {"@type":"AdministrativeArea","name":"Gauteng" }
+  },
+  {"@context":"https://schema.org","@type":"Service","@id":"https://www.mapoolsconstruction.co.za/services.html#eco-equipment","serviceType":"Paving, Tiling, Ceiling & Plumbing","name":"Paving, Tiling & General Construction","description":"Paving (driveways, patios, pool decks), floor tiles, ceiling installation, house and office plumbing, and garden services.","provider": {"@id":"https://www.mapoolsconstruction.co.za/#business" },"areaServed": {"@type":"AdministrativeArea","name":"Gauteng" }
+  },
+  {"@context":"https://schema.org","@type":"Service","@id":"https://www.mapoolsconstruction.co.za/services.html#estate-concierge","serviceType":"Pool Services and Maintenance","name":"Pool Services & Maintenance","description":"Regular pool services, water testing, equipment checks, and ad-hoc cleaning — flexible plans matched to your pool and budget.","provider": {"@id":"https://www.mapoolsconstruction.co.za/#business" },"areaServed": {"@type":"AdministrativeArea","name":"Gauteng" }
+  }
+]
+</script>
+<!-- AE:META:END -->
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-white">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] max-w-[1280px] mt-6 z-50 flex justify-between items-center px-8 py-3 bg-white/60 backdrop-blur-xl rounded-full border border-white/20 shadow-[0_20px_50px_rgba(10,35,66,0.05)]">
+<div class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342]">
+            Ma Pools Construction
+        </div>
+<div class="hidden md:flex items-center space-x-10 font-serif text-sm tracking-wide uppercase">
+<a class="text-[#0A2342] font-bold border-b border-[#0A2342] pb-1" href="/services.html">Services</a>
+<a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="/gallery.html">Gallery</a>
+<a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="/about.html">About</a>
+</div>
+<a class="hidden md:inline-flex bg-primary text-on-primary px-6 py-2.5 rounded-full font-serif text-sm tracking-wide uppercase active:scale-95 transition-transform hover:bg-primary-container" href="/book.html" role="button">
+            Book a Consult
+        </a>
+<!-- AE:MOBILE-NAV:START -->
+<button type="button" id="mobile-nav-trigger" class="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-full text-[#0A2342] hover:bg-[#0A2342]/5 active:scale-95 transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#0A2342] focus-visible:outline-offset-2" aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu">
+<span class="material-symbols-outlined text-[26px]" data-mobile-nav-icon>menu</span>
+</button>
+<div id="mobile-nav-panel" class="md:hidden absolute top-full left-0 right-0 mt-3 origin-top opacity-0 -translate-y-2 pointer-events-none transition-[opacity,transform] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-opacity motion-reduce:transform-none" role="dialog" aria-modal="true" aria-label="Site navigation" hidden>
+<div class="bg-white/95 backdrop-blur-xl border border-white/40 rounded-3xl shadow-[0_30px_60px_rgba(10,35,66,0.15)] p-6">
+<nav class="flex flex-col gap-1 font-serif text-sm tracking-wide uppercase" aria-label="Mobile">
+<a aria-current="page" class="px-4 py-3 rounded-2xl text-[#0A2342] font-bold hover:bg-[#0A2342]/5 transition-colors focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="/services.html">Services</a>
+<a class="px-4 py-3 rounded-2xl text-[#0A2342]/85 hover:text-[#0A2342] hover:bg-[#0A2342]/5 transition-colors focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="/gallery.html">Gallery</a>
+<a class="px-4 py-3 rounded-2xl text-[#0A2342]/85 hover:text-[#0A2342] hover:bg-[#0A2342]/5 transition-colors focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="/about.html">About</a>
+</nav>
+<a class="mt-4 flex items-center justify-center gap-2 bg-[#0A2342] text-white px-6 py-3.5 rounded-full font-serif text-sm tracking-wide uppercase active:scale-95 transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="/book.html" role="button">
+        Get a Free Quote
+      </a>
+<div class="mt-3 grid grid-cols-2 gap-3">
+<a class="flex items-center justify-center gap-2 border border-[#0A2342]/15 text-[#0A2342] px-4 py-3 rounded-full font-serif text-xs tracking-wide uppercase hover:bg-[#0A2342]/5 active:scale-95 transition-all duration-200 focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20get%20a%20quote" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+        WhatsApp
+      </a>
+<a class="flex items-center justify-center gap-2 border border-[#0A2342]/15 text-[#0A2342] px-4 py-3 rounded-full font-serif text-xs tracking-wide uppercase hover:bg-[#0A2342]/5 active:scale-95 transition-all duration-200 focus:outline focus:outline-2 focus:outline-[#0A2342] focus:outline-offset-2" href="tel:+27787122157">
+<span class="material-symbols-outlined text-[18px]">call</span>
+        Call
+      </a>
+</div>
+</div>
+</div>
+<!-- AE:MOBILE-NAV:END -->
+</nav>
+<main class="pt-32">
+<!-- Hero Header -->
+<section class="max-w-[1280px] mx-auto px-6 py-24 text-center">
+<span class="text-label-upper font-label-upper text-secondary mb-6 block uppercase tracking-widest">POOL & CONSTRUCTION SERVICES</span>
+<h1 class="text-4xl md:text-5xl lg:text-4xl md:text-5xl lg:text-display-xl font-display-xl text-primary mb-10 leading-tight">Pool builds, renovations, repairs, and care.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                From new construction through to filter changes and pump repairs — Ma Pools Construction handles every stage of pool ownership across Gauteng. Plus paving, tiling, ceiling, plumbing, and garden services. Director-led, fixed quotes, accountable timelines.
+            </p>
+</section>
+<!-- Services Bento Grid -->
+<section class="max-w-[1280px] mx-auto px-6 pb-20 md:pb-28 lg:pb-32">
+<div class="grid grid-cols-12 gap-8">
+<!-- Weekly Maintenance (Large Primary Card) -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest border border-surface-container rounded-3xl p-14 hover-card relative overflow-hidden group">
+<div class="relative z-10 w-2/3">
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-primary mb-6">Pool Construction & Renovation</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                            New pool construction, complete renovations, marblite finishing, fiberglass installation, and fish pond builds. Quoted upfront, built by our own team.
+                        </p>
+<ul class="space-y-5 mb-14">
+<li class="flex items-center text-body-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                New pool construction, full project management
+                            </li>
+<li class="flex items-center text-body-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Renovations, marblite, fiberglass
+                            </li>
+<li class="flex items-center text-body-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Fish ponds, pool covers, pool services
+                            </li>
+</ul>
+<a class="inline-flex items-center text-label-upper font-label-upper text-primary border-b border-primary/30 pb-1 hover:border-primary hover:gap-3 transition-all duration-300 gap-2" href="/book.html">
+                            ENQUIRE ABOUT THIS PACKAGE <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="absolute right-0 top-0 h-full w-2/5 opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 ease-out origin-right">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest to-transparent z-10"></div>
+<img loading="lazy" decoding="async" alt="swimming pool in a modern Gauteng garden with clear turquoise water and minimalist architecture" class="h-full w-full object-cover" src="/assets/images/service-weekly-maintenance-luxury-pool.png"/>
+</div>
+</div>
+<!-- Technical Repairs -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest border border-surface-container rounded-3xl p-12 hover-card flex flex-col justify-between group">
+<div>
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mb-8 group-hover:-rotate-12 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="handyman">handyman</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-6">Technical Repairs</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                            Pump repairs, leak detection, jacuzzi leak repair, motor pump installation, filter sand changes, timer install — we fix what others walk away from.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-surface-container text-primary font-label-upper text-xs rounded-full uppercase tracking-wider">Pump Repair</span>
+<span class="px-4 py-2 bg-surface-container text-primary font-label-upper text-xs rounded-full uppercase tracking-wider">Jacuzzi Leaks</span>
+<span class="px-4 py-2 bg-surface-container text-primary font-label-upper text-xs rounded-full uppercase tracking-wider">Filter Sand</span>
+</div>
+</div>
+<!-- Acid Washes (Long Vertical or Focus Card) -->
+<div class="col-span-12 lg:col-span-6 bg-primary text-on-primary rounded-3xl p-14 hover-card relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<h3 class="text-headline-lg font-headline-lg mb-6">Equipment & Plumbing</h3>
+<p class="text-body-lg font-body-lg text-on-primary-container mb-10 max-w-md">
+                                Pool heating systems, plumbing installation, motor pumps, timers, and pool covers — supplied, installed, and serviced. We also build fish ponds and install jacuzzis.
+                            </p>
+</div>
+<div class="flex items-center bg-white/5 rounded-2xl p-6 backdrop-blur-sm border border-white/10 group-hover:bg-white/10 transition-colors">
+<div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mr-5">
+<span class="material-symbols-outlined text-secondary-container text-2xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<p class="text-label-upper font-label-upper text-white tracking-widest mb-1">EVERY SYSTEM</p>
+<p class="text-sm text-on-primary-container">Heating · Plumbing · Pumps · Timers · Covers</p>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+</div>
+<!-- Eco-Friendly Equipment -->
+<div class="col-span-12 lg:col-span-6 bg-surface-container-lowest border border-surface-container rounded-3xl p-14 hover-card flex flex-col justify-between group">
+<div>
+<div class="flex justify-between items-start mb-8">
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="eco">eco</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-label-upper uppercase tracking-wider font-bold">FULL CONTRACTOR</div>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-primary mb-6">Beyond the Pool</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                            We don't just do pools. Paving, floor tiles, ceilings, house and office plumbing, garden services — one contractor, one quote.
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 rounded-2xl bg-surface-container-low border border-surface-container group-hover:bg-white transition-colors">
+<p class="font-bold text-primary mb-2 text-lg">Paving</p>
+<p class="text-sm text-on-surface-variant">Driveway, patio, pool deck</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low border border-surface-container group-hover:bg-white transition-colors">
+<p class="font-bold text-primary mb-2 text-lg">Plumbing</p>
+<p class="text-sm text-on-surface-variant">House & office, full install</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Complete Service Catalogue -->
+<section class="max-w-[1280px] mx-auto px-6 py-24" id="all-services">
+<div class="text-center mb-16">
+<span class="font-label-upper text-secondary uppercase tracking-widest mb-4 block">Complete Service Catalogue</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-6">Everything we do.</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+From new pool construction through to filter changes, leak repairs, and full estate maintenance — Ma Pools Construction handles every stage of pool ownership, plus paving, tiling, plumbing, and garden services across Gauteng.
+</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30">
+<h3 class="text-2xl font-serif font-semibold text-primary mb-6 pb-3 border-b border-primary/20">Pool Construction &amp; Renovation</h3>
+<ul class="space-y-3 text-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>New pool construction</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Pool renovations</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Marblite finishing</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Fiberglass installation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Pool covers — supply &amp; installation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Fish pond construction</li>
+</ul>
+</div>
+
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30">
+<h3 class="text-2xl font-serif font-semibold text-primary mb-6 pb-3 border-b border-primary/20">Pool Equipment &amp; Plumbing</h3>
+<ul class="space-y-3 text-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Pool heating systems</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Pool plumbing installation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Motor pump installation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Pool pump repair</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Filter sand replacement</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Timer installation</li>
+</ul>
+</div>
+
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30">
+<h3 class="text-2xl font-serif font-semibold text-primary mb-6 pb-3 border-b border-primary/20">Jacuzzi &amp; Pool Care</h3>
+<ul class="space-y-3 text-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Jacuzzi installation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Jacuzzi leak repair</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Pool services &amp; regular maintenance</li>
+</ul>
+</div>
+
+<div class="bg-surface-container-lowest p-10 rounded-2xl border border-outline-variant/30">
+<h3 class="text-2xl font-serif font-semibold text-primary mb-6 pb-3 border-b border-primary/20">Beyond the Pool</h3>
+<ul class="space-y-3 text-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Paving</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Floor tiles</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Ceiling installation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>House plumbing</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Office plumbing</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-secondary text-xl flex-shrink-0 mt-0.5">check_circle</span>Garden services</li>
+</ul>
+</div>
+</div>
+
+<div class="text-center bg-surface-container-low p-10 rounded-2xl">
+<p class="text-body-lg text-on-surface-variant mb-6">Need something specific? We'll quote you directly.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<a class="bg-primary-container text-white px-8 py-4 rounded-full font-serif text-sm tracking-wide uppercase hover:scale-[1.02] transition-transform" href="/book.html" role="button">Get a Free Quote</a>
+<a class="bg-[#25D366] text-white px-8 py-4 rounded-full font-serif text-sm tracking-wide uppercase hover:scale-[1.02] transition-transform inline-flex items-center gap-2" href="https://wa.me/27656430603" target="_blank" rel="noopener" role="button"><span class="material-symbols-outlined">chat</span>WhatsApp 065 643 0603</a>
+<a class="border border-primary text-primary px-8 py-4 rounded-full font-serif text-sm tracking-wide uppercase hover:bg-primary hover:text-white transition-colors" href="tel:+27787122157" role="button">Call 078 712 2157</a>
+</div>
+</div>
+</section>
+<!-- Signature Stamp Section -->
+<section class="max-w-full px-6 py-20 md:py-28 lg:py-32 bg-surface-container-low text-center relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto relative z-10 flex flex-col items-center">
+<div class="relative w-40 h-40 mb-10">
+<div class="absolute inset-0 bg-primary/5 rounded-full animate-pulse"></div>
+<div class="absolute inset-4 border border-primary/20 rounded-full border-dashed animate-[spin_20s_linear_infinite]"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-6xl" data-icon="verified" data-weight="fill">verified</span>
+</div>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-8">The Ma Pools Construction Guarantee</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16 leading-relaxed">
+                    Every job is led by our founding director, Mkhacani Amos Chauke — and quoted upfront. No call centres, no middlemen, no surprise add-ons.
+                </p>
+<div class="flex flex-wrap gap-16 justify-center">
+<div class="text-center">
+<p class="text-4xl md:text-5xl lg:text-4xl md:text-5xl lg:text-display-xl font-display-xl text-primary mb-2">15+</p>
+<p class="text-label-upper font-label-upper text-on-surface-variant tracking-widest uppercase">YEARS EXP.</p>
+</div>
+<div class="text-center">
+<p class="text-4xl md:text-5xl lg:text-4xl md:text-5xl lg:text-display-xl font-display-xl text-primary mb-2">24h</p>
+<p class="text-label-upper font-label-upper text-on-surface-variant tracking-widest uppercase">RESPONSE</p>
+</div>
+<div class="text-center">
+<p class="text-4xl md:text-5xl lg:text-4xl md:text-5xl lg:text-display-xl font-display-xl text-primary mb-2">100%</p>
+<p class="text-label-upper font-label-upper text-on-surface-variant tracking-widest uppercase">BIO-SAFE</p>
+</div>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-surface-container to-transparent opacity-50"></div>
+<div class="absolute bottom-0 right-0 w-[800px] h-[800px] bg-secondary/5 rounded-full blur-[100px] translate-y-1/2 translate-x-1/4"></div>
+</section>
+<!-- Booking CTA -->
+<section class="max-w-[1280px] mx-auto px-6 py-20 md:py-28 lg:py-32 flex flex-col lg:flex-row items-center gap-24">
+<div class="flex-1">
+<h2 class="text-4xl md:text-5xl lg:text-4xl md:text-5xl lg:text-display-xl font-display-xl text-primary mb-8 leading-tight">Ready to <br/>start?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-12 max-w-lg leading-relaxed">
+                    Schedule a consultation with our lead technician today and experience the difference of professional pool management.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-upper text-sm tracking-wider uppercase hover:bg-primary-container hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/20">
+                        BOOK A SITE VISIT
+                    </button>
+<button class="bg-white border border-outline-variant px-10 py-5 rounded-full font-label-upper text-sm tracking-wider uppercase text-primary hover:border-primary hover:bg-surface-container-low transition-all duration-300">
+                        VIEW PRICING
+                    </button>
+</div>
+</div>
+<div class="flex-1 w-full h-[600px] relative">
+<div class="absolute inset-0 bg-secondary/10 rounded-[3rem] -rotate-3 transform origin-bottom-right"></div>
+<img loading="lazy" decoding="async" alt="Ma Pools Construction pool technician in uniform testing water quality at a luxury Gauteng residential pool at sunrise" class="w-full h-full object-cover rounded-[3rem] shadow-2xl relative z-10 hover-card" src="/assets/images/service-pool-technician-water-testing.png"/>
+</div>
+</section>
+</main>
+<!-- Footer Component (Shared Component) -->
+<!-- AE:FOOTER:START -->
+<footer class="w-full bg-slate-50 border-t border-slate-200 py-16 px-6 md:px-12 lg:px-20 text-slate-600">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col gap-3 pb-10 border-b border-slate-200">
+<div class="font-serif text-lg font-medium text-[#0A2342] uppercase tracking-widest">MA POOLS CONSTRUCTION</div>
+<p class="font-serif text-sm leading-relaxed text-slate-600 max-w-2xl">Pool builds, repairs and care across Gauteng. Plus paving, plumbing, tiling, and garden services.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#0A2342]" style="font-size: 18px;">place</span>
+<p class="font-serif text-sm tracking-widest uppercase text-[#0A2342]">Visit</p>
+</div>
+<address class="not-italic font-serif text-sm leading-relaxed text-slate-600">
+                331B Utekwane Street, Zone 7<br/>
+                Meadowlands, 1852<br/>
+                Soweto, Gauteng
+            </address>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#0A2342]" style="font-size: 18px;">forum</span>
+<p class="font-serif text-sm tracking-widest uppercase text-[#0A2342]">Talk</p>
+</div>
+<div class="font-serif text-sm leading-relaxed space-y-2">
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="https://wa.me/27656430603" target="_blank" rel="noopener">WhatsApp 065 643 0603</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="tel:+27787122157">Call 078 712 2157</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="mailto:mapoolsconstruction@gmail.com">mapoolsconstruction@gmail.com</a>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#0A2342]" style="font-size: 18px;">apps</span>
+<p class="font-serif text-sm tracking-widest uppercase text-[#0A2342]">Site</p>
+</div>
+<div class="font-serif text-sm leading-relaxed space-y-2">
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="/services.html">Services</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="/gallery.html">Gallery</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="/about.html">About</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="/book.html">Get a Free Quote</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="/privacy.html">Privacy</a>
+<a class="block text-slate-600 hover:text-[#0A2342] transition-colors duration-300" href="/terms.html">Terms</a>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-6 mt-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-3 font-serif text-xs text-slate-500">
+<p>&copy; 2026 Ma Pools Construction. Director: Mkhacani Amos Chauke.</p>
+<p>Pool builds, repairs, and care across Gauteng.</p>
+</div>
+</div>
+</footer>
+<!-- AE:FOOTER:END -->
+<!-- AE:WA-FLOAT:START -->
+<a href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20book%20a%20pool%20service" target="_blank" rel="noopener noreferrer" aria-label="Chat with Ma Pools Construction on WhatsApp" class="fixed bottom-6 left-6 z-[100] bg-[#25D366] hover:bg-[#1ebe57] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300" style="box-shadow: 0 10px 30px rgba(37,211,102,0.45);">
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.554-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.521.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+</a>
+<!-- AE:WA-FLOAT:END -->
+<!-- AE:MOBILE-NAV-JS:START -->
+<script>
+(function(){
+  var ns = (window.maMobileNav = window.maMobileNav || {});
+  if (ns._installed) { ns.init && ns.init(); return; }
+  ns._installed = true;
+
+  ns.init = function init(){
+    var trigger = document.getElementById('mobile-nav-trigger');
+    var panel = document.getElementById('mobile-nav-panel');
+    if (!trigger || !panel) return;
+    if (trigger.dataset.maBound === '1') return;
+    trigger.dataset.maBound = '1';
+
+    var icon = trigger.querySelector('[data-mobile-nav-icon]');
+    var body = document.body;
+    var lastFocus = null;
+    var isOpen = false;
+
+    function focusable(){
+      return Array.prototype.slice.call(panel.querySelectorAll(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      ));
+    }
+
+    function open(){
+      if (isOpen) return;
+      isOpen = true;
+      lastFocus = document.activeElement;
+      panel.hidden = false;
+      void panel.offsetWidth;
+      panel.classList.remove('opacity-0','-translate-y-2','pointer-events-none');
+      panel.classList.add('opacity-100','translate-y-0');
+      trigger.setAttribute('aria-expanded','true');
+      trigger.setAttribute('aria-label','Close menu');
+      if (icon) icon.textContent = 'close';
+      body.classList.add('overflow-hidden');
+      document.addEventListener('keydown', onKey, true);
+      document.addEventListener('mousedown', onOutside, true);
+      document.addEventListener('touchstart', onOutside, true);
+      var first = focusable()[0];
+      if (first) setTimeout(function(){ first.focus(); }, 0);
+    }
+
+    function close(returnFocus){
+      if (!isOpen) return;
+      isOpen = false;
+      panel.classList.add('opacity-0','-translate-y-2','pointer-events-none');
+      panel.classList.remove('opacity-100','translate-y-0');
+      trigger.setAttribute('aria-expanded','false');
+      trigger.setAttribute('aria-label','Open menu');
+      if (icon) icon.textContent = 'menu';
+      body.classList.remove('overflow-hidden');
+      document.removeEventListener('keydown', onKey, true);
+      document.removeEventListener('mousedown', onOutside, true);
+      document.removeEventListener('touchstart', onOutside, true);
+      var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var delay = reduced ? 0 : 220;
+      setTimeout(function(){ if (!isOpen) panel.hidden = true; }, delay);
+      if (returnFocus !== false && lastFocus && lastFocus.focus) {
+        try { lastFocus.focus(); } catch(e){}
+      }
+    }
+
+    function toggle(){ isOpen ? close() : open(); }
+
+    function onKey(e){
+      if (e.key === 'Escape' || e.keyCode === 27){
+        e.preventDefault();
+        close();
+        return;
+      }
+      if (e.key === 'Tab' || e.keyCode === 9){
+        var f = focusable();
+        if (!f.length) { e.preventDefault(); return; }
+        var first = f[0], last = f[f.length-1];
+        if (e.shiftKey && document.activeElement === first){
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last){
+          e.preventDefault(); first.focus();
+        }
+      }
+    }
+
+    function onOutside(e){
+      if (!isOpen) return;
+      if (panel.contains(e.target) || trigger.contains(e.target)) return;
+      close(false);
+    }
+
+    trigger.addEventListener('click', function(e){ e.preventDefault(); toggle(); });
+    panel.addEventListener('click', function(e){
+      var a = e.target.closest('a');
+      if (a) close(false);
+    });
+    var mq = window.matchMedia('(min-width: 768px)');
+    var onMQ = function(){ if (mq.matches) close(false); };
+    if (mq.addEventListener) mq.addEventListener('change', onMQ);
+    else if (mq.addListener) mq.addListener(onMQ);
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ns.init);
+  } else {
+    ns.init();
+  }
+})();
+</script>
+<!-- AE:MOBILE-NAV-JS:END -->
+</body></html>

@@ -1,0 +1,260 @@
+{
+  "_notes": "Per-page <head> meta content for Ma Pools Construction. Drop into each HTML file. og.image is a placeholder — designer to produce a 1200x630 OG image and place at /assets/images/og-aquaestate-default.jpg.",
+  "_default_og_image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg",
+  "_default_og_image_alt": "Ma Pools Construction — pool care, Gauteng. A modern infinity pool in Gauteng estate.",
+  "_twitter_handle_placeholder": "@mapoolspools",
+
+  "index.html": {
+    "title": "Ma Pools Construction | Pool builds, renovations & care across Gauteng",
+    "description": "Pool construction, renovations, repairs, equipment, plumbing & care across Gauteng. Director-led from Meadowlands. WhatsApp 065 643 0603 for a free quote.",
+    "canonical": "https://www.mapoolsconstruction.co.za/",
+    "robots": "index, follow, max-image-preview:large",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Ma Pools Construction | Pool builds, renovations & care across Gauteng",
+      "description": "Discreet, expert pool maintenance for propertys across Gauteng, Gauteng, Gauteng & Pretoria. Book a private consultation.",
+      "url": "https://www.mapoolsconstruction.co.za/",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-home.jpg",
+      "image_alt": "Ma Pools Construction — pool construction and care across Gauteng",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@mapoolspools",
+      "title": "Ma Pools Construction | Pool builds & care across Gauteng",
+      "description": "Discreet, expert pool maintenance for Gauteng homes and estates. Book a private consultation.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-home.jpg"
+    },
+    "keywords_for_reference": [
+      "pool maintenance Gauteng",
+      "pool care Gauteng",
+      "premium pool service Johannesburg",
+      "pool maintenance",
+      "Gauteng pool care",
+      "Pretoria pool service"
+    ]
+  },
+
+  "services.html": {
+    "title": "Pool Care Services | Weekly, Repairs & Acid Wash | Ma Pools Construction",
+    "description": "Pool construction, renovations, equipment installs, repairs and care across Gauteng. Plus paving, tiling, plumbing &amp; garden services. WhatsApp 065 643 0603.",
+    "canonical": "https://www.mapoolsconstruction.co.za/services.html",
+    "robots": "index, follow, max-image-preview:large",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Pool Care Services | Ma Pools Construction",
+      "description": "Weekly maintenance, technical repairs, acid washes & eco-equipment upgrades for Gauteng homes and estates.",
+      "url": "https://www.mapoolsconstruction.co.za/services.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-services.jpg",
+      "image_alt": "Ma Pools Construction — pool construction and care services across Gauteng",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@mapoolspools",
+      "title": "Pool Care Services | Ma Pools Construction",
+      "description": "Weekly maintenance, technical repairs, acid washes & eco upgrades for Gauteng estates.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-services.jpg"
+    },
+    "keywords_for_reference": [
+      "weekly pool maintenance Gauteng",
+      "pool acid wash Gauteng",
+      "pool pump repair Johannesburg",
+      "variable speed pool pump",
+      "saline pool conversion Gauteng"
+    ]
+  },
+
+  "gallery.html": {
+    "title": "Estate Portfolio Gallery | Ma Pools Construction Pool Care, Gauteng",
+    "description": "Curated portfolio of Gauteng pools under Ma Pools Construction care — Gauteng project, Meadowlands, Gauteng project and more.",
+    "canonical": "https://www.mapoolsconstruction.co.za/gallery.html",
+    "robots": "index, follow, max-image-preview:large",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Estate Portfolio Gallery | Ma Pools Construction",
+      "description": "A curated showcase of pools across Gauteng, maintained with real precision.",
+      "url": "https://www.mapoolsconstruction.co.za/gallery.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-gallery.jpg",
+      "image_alt": "Pool installation completed by Ma Pools Construction",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@mapoolspools",
+      "title": "Estate Portfolio Gallery | Ma Pools Construction",
+      "description": "A curated showcase of Gauteng pools.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-gallery.jpg"
+    },
+    "keywords_for_reference": [
+      "pool gallery Gauteng",
+      "Gauteng project pool",
+      "Meadowlands pool design",
+      "Meyersdal eco pool"
+    ]
+  },
+
+  "testimonials.html": {
+    "title": "Client Testimonials | Ma Pools Construction — Gauteng Pool Care",
+    "description": "Estate owners across Meadowlands, Gauteng, Gauteng & Waterfall on why Ma Pools Construction is the trusted choice for pool care in Gauteng.",
+    "canonical": "https://www.mapoolsconstruction.co.za/testimonials.html",
+    "robots": "index, follow, max-image-preview:large",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Client Testimonials | Ma Pools Construction",
+      "description": "Customer feedback and reviews of Ma Pools Construction.",
+      "url": "https://www.mapoolsconstruction.co.za/testimonials.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-testimonials.jpg",
+      "image_alt": "Ma Pools Construction client testimonial — calm reflective pool at sunset",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@mapoolspools",
+      "title": "Client Testimonials | Ma Pools Construction",
+      "description": "Customer reviews of Ma Pools Construction.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-testimonials.jpg"
+    },
+    "keywords_for_reference": [
+      "Ma Pools Construction reviews",
+      "best pool service Gauteng reviews",
+      "Meadowlands pool care testimonial"
+    ]
+  },
+
+  "book.html": {
+    "title": "Book a Consultation | Private Pool Care Inquiry | Ma Pools Construction",
+    "description": "Request a private on-site evaluation for your Gauteng estate. Senior technicians respond within one business day. Limited new-client availability.",
+    "canonical": "https://www.mapoolsconstruction.co.za/book.html",
+    "robots": "index, follow, max-image-preview:large",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Book a Consultation | Ma Pools Construction",
+      "description": "Tell us about your project — we'll quote within one business day. Senior technician response within one business day.",
+      "url": "https://www.mapoolsconstruction.co.za/book.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-book.jpg",
+      "image_alt": "Ma Pools Construction consultation — senior technician evaluating an pool",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@mapoolspools",
+      "title": "Book a Consultation | Ma Pools Construction",
+      "description": "Private on-site evaluation for your Gauteng estate.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-book.jpg"
+    },
+    "keywords_for_reference": [
+      "book pool service Gauteng",
+      "pool consultation Gauteng",
+      "pool quote Johannesburg"
+    ]
+  },
+
+  "about.html": {
+    "title": "About Ma Pools Construction | Gauteng's Premier Pool Care Firm Since 2014",
+    "description": "Owner-operated, technician-led pool care for Gauteng's prestige estates since 2014. Meet the team behind experience of immaculate water and quiet service.",
+    "canonical": "https://www.mapoolsconstruction.co.za/about.html",
+    "robots": "index, follow, max-image-preview:large",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "About Ma Pools Construction — Director-led pool builds & care, Gauteng",
+      "description": "Director-led pool construction, renovation, and care for homes and businesses across Gauteng.",
+      "url": "https://www.mapoolsconstruction.co.za/about.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-about.jpg",
+      "image_alt": "Ma Pools Construction technician inspecting water clarity at a Gauteng pool",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@mapoolspools",
+      "title": "About Ma Pools Construction — Gauteng Pool Care",
+      "description": "Director-led pool construction, renovation, and care across Gauteng.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-about.jpg"
+    },
+    "keywords_for_reference": [
+      "Ma Pools Construction Gauteng",
+      "pool care company Gauteng",
+      "pool maintenance team Johannesburg"
+    ]
+  },
+
+  "privacy.html": {
+    "title": "Privacy Policy | Ma Pools Construction (POPIA Compliant)",
+    "description": "How Ma Pools Construction collects, uses, retains, and protects your personal information under South Africa's Protection of Personal Information Act (POPIA).",
+    "canonical": "https://www.mapoolsconstruction.co.za/privacy.html",
+    "robots": "index, follow, max-image-preview:standard",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Privacy Policy | Ma Pools Construction",
+      "description": "Our POPIA-compliant approach to personal information.",
+      "url": "https://www.mapoolsconstruction.co.za/privacy.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg",
+      "image_alt": "Ma Pools Construction — pool care, Gauteng",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary",
+      "site": "@mapoolspools",
+      "title": "Privacy Policy | Ma Pools Construction",
+      "description": "Our POPIA-compliant approach to personal information.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg"
+    },
+    "keywords_for_reference": ["privacy policy", "POPIA", "data protection South Africa"]
+  },
+
+  "terms.html": {
+    "title": "Terms of Service | Ma Pools Construction",
+    "description": "Terms governing use of Ma Pools Construction's pool care services in Gauteng — bookings, cancellations, payment, liability, and South African governing law.",
+    "canonical": "https://www.mapoolsconstruction.co.za/terms.html",
+    "robots": "index, follow, max-image-preview:standard",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Terms of Service | Ma Pools Construction",
+      "description": "Service terms, bookings, payment, and liability for Ma Pools Construction clients.",
+      "url": "https://www.mapoolsconstruction.co.za/terms.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg",
+      "image_alt": "Ma Pools Construction — pool care, Gauteng",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary",
+      "site": "@mapoolspools",
+      "title": "Terms of Service | Ma Pools Construction",
+      "description": "Service terms for Ma Pools Construction clients.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg"
+    },
+    "keywords_for_reference": ["terms of service", "service agreement"]
+  },
+
+  "404.html": {
+    "title": "Page Not Found | Ma Pools Construction",
+    "description": "This page slipped beneath the surface. Head back to Ma Pools Construction's homepage.",
+    "canonical": "https://www.mapoolsconstruction.co.za/404.html",
+    "robots": "noindex, follow",
+    "og": {
+      "type": "website",
+      "site_name": "Ma Pools Construction",
+      "title": "Page Not Found | Ma Pools Construction",
+      "description": "This page slipped beneath the surface.",
+      "url": "https://www.mapoolsconstruction.co.za/404.html",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg",
+      "image_alt": "Ma Pools Construction — pool care, Gauteng",
+      "locale": "en_ZA"
+    },
+    "twitter": {
+      "card": "summary",
+      "site": "@mapoolspools",
+      "title": "Page Not Found | Ma Pools Construction",
+      "description": "This page slipped beneath the surface.",
+      "image": "https://www.mapoolsconstruction.co.za/assets/images/og-aquaestate-default.jpg"
+    }
+  }
+}

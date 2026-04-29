@@ -1,0 +1,64 @@
+# Ma Pools Construction — Premium Pool Care for Gauteng
+# robots.txt — last reviewed 2026-04-29
+
+# ----------------------------------------------------------------
+# Default rule: allow all general-purpose web crawlers
+# ----------------------------------------------------------------
+User-agent: *
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+# ----------------------------------------------------------------
+# AI / LLM crawlers — explicitly allowed for GEO / AI search visibility
+# We want our brand cited by ChatGPT, Claude, Perplexity, Gemini, etc.
+# ----------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: CCBot
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /_archive/
+Disallow: /_design_reference/
+
+# ----------------------------------------------------------------
+# Sitemap reference
+# ----------------------------------------------------------------
+Sitemap: https://www.mapoolsconstruction.co.za/sitemap.xml

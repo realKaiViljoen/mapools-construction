@@ -1,0 +1,20 @@
+# Ma Pools Construction — Netlify _redirects
+# Pretty-URL aliases — visitors can use either /services or /services.html
+
+/services        /services.html        200
+/gallery         /gallery.html         200
+/testimonials    /testimonials.html    200
+/book            /book.html            200
+/about           /about.html           200
+/privacy         /privacy.html         200
+/terms           /terms.html           200
+
+# Block private working directories from being publicly served
+/_archive/*              /404.html  404
+/_design_reference/*     /404.html  404
+/_dev/*                  /404.html  404
+/tasks/*                 /404.html  404
+/CLAUDE.md               /404.html  404
+
+# 404 fallback — always last
+/*    /404.html    404

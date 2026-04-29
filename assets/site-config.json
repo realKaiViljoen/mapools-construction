@@ -1,0 +1,129 @@
+{
+  "brand": "Ma Pools Construction",
+  "legal_name": "Ma Pools Construction",
+  "tagline": "New builds, renovations, and dependable pool care across Gauteng.",
+  "short_description": "Pool construction, renovation, repairs and care across Gauteng.",
+  "long_description": "Ma Pools Construction is a Gauteng-based, owner-operated pool care firm serving high-end private residences across Gauteng, Gauteng, Gauteng, Houghton, Meadowlands, Waterfall, Gauteng project, Pretoria, Centurion and surrounding suburbs. Operating since 2014, the firm provides weekly maintenance, precision water-chemistry balancing, technical equipment repairs, professional acid washes, and eco-efficient equipment upgrades.",
+  "domain": "https://www.mapoolsconstruction.co.za",
+  "founded": "2014",
+  "phone_placeholder": "+27 78 712 2157",
+  "phone_e164_placeholder": "+27787122157",
+  "phone_whatsapp_placeholder": "+27787122157",
+  "email_placeholder": "mapoolsconstruction@gmail.com",
+  "email_privacy_placeholder": "privacy@mapoolsconstruction.co.za",
+  "email_legal_placeholder": "legal@mapoolsconstruction.co.za",
+  "address_placeholder": {
+    "streetAddress": "331B Utekwane Street, Zone 7",
+    "addressLocality": "Meadowlands",
+    "addressRegion": "Gauteng",
+    "postalCode": "1852",
+    "addressCountry": "ZA"
+  },
+  "geo_placeholder": {
+    "latitude": "-26.23080",
+    "longitude": "27.91520"
+  },
+  "opening_hours": [
+    { "day": "Monday",    "opens": "07:30", "closes": "17:30" },
+    { "day": "Tuesday",   "opens": "07:30", "closes": "17:30" },
+    { "day": "Wednesday", "opens": "07:30", "closes": "17:30" },
+    { "day": "Thursday",  "opens": "07:30", "closes": "17:30" },
+    { "day": "Friday",    "opens": "07:30", "closes": "17:30" },
+    { "day": "Saturday",  "opens": "08:00", "closes": "13:00" },
+    { "day": "Sunday",    "opens": "closed", "closes": "closed" }
+  ],
+  "price_range": "RRRR",
+  "service_areas": [
+    "Gauteng",
+    "Meadowlands",
+    "Gauteng",
+    "Gauteng",
+    "Houghton",
+    "Westcliff",
+    "Saxonwold",
+    "Atholl",
+    "Inanda",
+    "Morningside",
+    "Dainfern",
+    "Fourways",
+    "Lonehill",
+    "Gauteng project",
+    "Gauteng project",
+    "Midrand",
+    "Bedfordview",
+    "Gauteng project",
+    "Pretoria",
+    "Waterkloof",
+    "Brooklyn",
+    "Lynnwood",
+    "Menlo Park",
+    "Centurion",
+    "Irene",
+    "Cornwall Hill"
+  ],
+  "core_services": [
+    {
+      "id": "weekly-maintenance",
+      "name": "Pool Construction & Renovation",
+      "summary": "weekly cleaning, chemical balancing, and equipment health checks."
+    },
+    {
+      "id": "crystal-clarity-system",
+      "name": "Crystal Clarity System",
+      "summary": "Proprietary 12-point chemical balancing protocol with UV-C sanitation calibration."
+    },
+    {
+      "id": "technical-repairs",
+      "name": "Technical Repairs",
+      "summary": "Specialist troubleshooting for pumps, hydraulics, leak detection, and chlorinators."
+    },
+    {
+      "id": "acid-washes",
+      "name": "Pool Equipment & Plumbing",
+      "summary": "Controlled chemical treatment that revitalises aging plaster and removes deep stains in 48 hours."
+    },
+    {
+      "id": "eco-equipment",
+      "name": "Paving, Tiling & General Construction",
+      "summary": "Variable-speed pumps and UV sterilisers reduce electricity costs by up to 70%."
+    },
+    {
+      "id": "estate-concierge",
+      "name": "Pool Services & Maintenance",
+      "summary": "Fully managed monthly service with 24/7 priority emergency support and Gold Certification."
+    },
+    {
+      "id": "structural-inspections",
+      "name": "Structural Integrity Inspections",
+      "summary": "Periodic audits of plaster, tiling, hydraulics, and load-bearing pool elements."
+    }
+  ],
+  "team": [
+    { "name": "Mkhacani Amos Chauke",  "role": "Director of Operations" },
+    { "name": "Sarah Mokoena",  "role": "Client Relations" },
+    { "name": "Pieter van Wyk", "role": "Head Technician" }
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/mapoolsconstruction",
+    "facebook":  "https://www.facebook.com/mapoolsconstruction",
+    "linkedin":  "https://www.linkedin.com/company/ma-pools-construction"
+  },
+  "design_tokens": {
+    "primary": "#0A2342",
+    "primary_container": "#0a2342",
+    "accent_gold": "#a78541",
+    "accent_gold_light": "#e9c176",
+    "surface": "#f8f9ff",
+    "on_surface": "#181c1f",
+    "fonts": {
+      "headline": "Noto Serif",
+      "body": "Manrope"
+    }
+  },
+  "review_aggregate_placeholder": {
+    "ratingValue": 4.9,
+    "reviewCount": 47,
+    "bestRating": 5,
+    "worstRating": 1
+  }
+}

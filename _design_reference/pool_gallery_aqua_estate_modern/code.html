@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;family=Noto+Serif:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d5e3ff",
+                        "outline": "#74777e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "on-tertiary-container": "#a78541",
+                        "error": "#ba1a1a",
+                        "surface": "#f8f9ff",
+                        "inverse-primary": "#b2c7ef",
+                        "inverse-surface": "#2d3134",
+                        "primary": "#000d22",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "secondary-container": "#dfe0e0",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "primary-fixed-dim": "#b2c7ef",
+                        "on-secondary-container": "#616363",
+                        "surface-container-high": "#e5e8ec",
+                        "on-tertiary-fixed": "#261900",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-container": "#ebeef2",
+                        "tertiary-container": "#302000",
+                        "on-surface": "#181c1f",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "on-primary-container": "#768baf",
+                        "on-primary-fixed": "#021c3a",
+                        "secondary": "#5d5f5f",
+                        "surface-tint": "#4a5f81",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#eef1f4",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c4c6cf",
+                        "surface-container-highest": "#e0e3e6",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#140b00",
+                        "tertiary-fixed": "#ffdea5",
+                        "primary-container": "#0a2342",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-background": "#181c1f",
+                        "background": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "on-primary-fixed-variant": "#324768",
+                        "surface-variant": "#e0e3e6",
+                        "surface-container-low": "#eff4ff",
+                        "on-surface-variant": "#44474e",
+                        "secondary-fixed-dim": "#c6c6c7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "gutter": "32px",
+                        "margin-mobile": "24px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Noto Serif"],
+                        "label-upper": ["Noto Serif"],
+                        "body-lg": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "display-xl": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-upper": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-stamp {
+            background: radial-gradient(circle at center, transparent 60%, rgba(167, 133, 65, 0.1) 100%);
+            border: 1px solid rgba(167, 133, 65, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] z-50 flex justify-between items-center px-8 py-3 bg-white/60 backdrop-blur-xl border border-white/20 max-w-[1280px] mt-6 rounded-full shadow-[0_20px_50px_rgba(10,35,66,0.05)]">
+<span class="text-2xl font-semibold text-[#0A2342] tracking-tighter font-serif">AQUA ESTATE</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-500 hover:text-[#0A2342] transition-colors duration-300 font-serif text-sm tracking-wide uppercase hover:scale-[1.02] ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Pools</a>
+<a class="text-slate-500 hover:text-[#0A2342] transition-colors duration-300 font-serif text-sm tracking-wide uppercase hover:scale-[1.02] ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Services</a>
+<a class="text-slate-500 hover:text-[#0A2342] transition-colors duration-300 font-serif text-sm tracking-wide uppercase hover:scale-[1.02] ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Estates</a>
+<a class="text-[#0A2342] font-bold border-b border-[#0A2342] pb-1 font-serif text-sm tracking-wide uppercase hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Gallery</a>
+<a class="text-slate-500 hover:text-[#0A2342] transition-colors duration-300 font-serif text-sm tracking-wide uppercase hover:scale-[1.02] ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Contact</a>
+</div>
+<button class="bg-[#0A2342] text-white font-serif text-sm tracking-wide uppercase px-6 py-2.5 rounded-full active:scale-95 transition-transform hover:scale-[1.02] hover:shadow-lg duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hidden md:block">
+    Book a Consult
+</button>
+</nav>
+<main class="mt-40">
+<!-- Hero Section -->
+<header class="px-20 max-w-[1440px] mx-auto mb-24">
+<div class="flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="max-w-2xl">
+<span class="font-label-upper text-on-tertiary-container mb-4 block">PREMIER PORTFOLIO</span>
+<h1 class="font-display-xl text-display-xl text-primary-container mb-6 italic">The Art of Stillness</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A curated showcase of Gauteng's most prestigious aquatic environments, maintained with surgical precision and aesthetic care.</p>
+</div>
+<div class="flex flex-col items-end gap-4">
+<div class="signature-stamp rounded-full p-6 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-on-tertiary-container mb-1" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-upper text-[10px] text-on-tertiary-container">ESTATE CERTIFIED</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Bento Gallery Grid -->
+<section class="px-20 max-w-[1440px] mx-auto mb-40">
+<div class="grid grid-cols-12 gap-8">
+<!-- Large Feature -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden bg-white border border-slate-100 rounded-2xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+<div class="aspect-[16/9] overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-transform duration-700" data-alt="luxury infinity pool overlooking a sunset in a modern South African estate with crystal clear blue water and stone deck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOlBKbElMsYjSXzJFWa-Ok7gmlJSJreaKXbFlJHUjxya8J0bLrROzayggWrLuibsZ0XYUE9-i2kBdNXIrwUHBDUVoZNC_WGmLRxrywnYxZwZrCkzJi5GCVP74zDdSnUvlrEo91bHFQEgQMr5WaJ6oxaLor_Grr6qhetDdO5lebGqBPPZ0ghxjX0dBQElDk7tXtKgV4MWAgAolotrbksQvqodgp1_zRa3x3qZyMNVDYPMDUz9TgcF5ZWqeoBHWgt68JWm2EAk5RbIqJ"/>
+</div>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<div class="flex justify-between items-end">
+<div>
+<h3 class="font-headline-md text-white">Steyn City Residence</h3>
+<p class="text-white/80 font-body-md">Precision chemical balance &amp; weekly tile detailing</p>
+</div>
+<span class="material-symbols-outlined text-white text-3xl">open_in_full</span>
+</div>
+</div>
+</div>
+<!-- Tall Feature -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden bg-white border border-slate-100 rounded-2xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+<div class="aspect-[3/4] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="vertical shot of a narrow lap pool in a minimalist courtyard with clean architectural lines and soft morning shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsppi3MpC4zKmsjgockRfhjBVckfcL6TevHNfbc-edczYCszoRuWLpXWohihj1mOr_8-v2n_UMmCxlI3IVV24l0HSaPhGovfx5HTf2L_YE3UXcomj5ACpqeTpETcSQhF7ProVD72QCPWeN4b6Jkpptlkf9oTE_ZSPek-XlKYRtxgP_c6qPVSAEtH__Dsusvcy1hDgx2XOi3EKvpUxEWPs7f2S8dnKYR9YeXn0rNVbanJY6ujlyWvRPaxPXaV39_LljlP63r5k84HDQ"/>
+</div>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/60 to-transparent">
+<h3 class="font-headline-md text-white text-2xl">Sandhurst Courtyard</h3>
+<p class="text-white/80 font-body-md">Filtration system optimization</p>
+</div>
+</div>
+<!-- Grid Item -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden bg-white border border-slate-100 rounded-2xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="geometric swimming pool at noon with ripples reflecting high-end architectural villa and blue skies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuD5vEQMTKkAhrkzjj2HcFlovgEbaW_8oH0gIlqQiULmzJYpegd0qE_n7n9eFyj61NWFi1kWfZF3Hd63Hl9sJxUnCnwN5K-yzUYc9bxKW9ozQWKbcR9FQRLIFQZh-TVDZQfbUG2b69kL6c4LhbtDC8oeDPlscTBLpiDoDO-XKx4l1nmoKsrTceXm7dUwQad_LuWFwewig0xwNd-4PDYl8AGY4zF7mQ2qiba0Emi_YhzW_NgYx3UYM6YoMAKpQrvd8p0EeogGxNZlSV"/>
+</div>
+<div class="absolute inset-0 bg-primary-container/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+<!-- Grid Item -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden bg-white border border-slate-100 rounded-2xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="outdoor swimming pool surrounded by manicured tropical gardens at golden hour with submerged lighting glowing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDsZEa9zEcsusgTqMrNOov6BX8xvsLe6wTDiGddOBkX27YB5YP_LrsBhlcPH366HH7Svay-taz86KlE8mg7C6JIQvvBtP1bmjEy15AqvLxbRnXUW94jhl2IOPJ3vY45pc305jHXBrt0P3shRKmph5k_J-QkRZC5lXv0pqp0fAfvl0zjDWYLYSy21OaA6LUGjPHVxz-hQDfTwM-mAf3pkGyoJWd5Xm3DVp_W32OzDZK5xcHOYp-4nJeSNuZU729FmIGnj_Ax6ViSczC"/>
+</div>
+<div class="absolute inset-0 bg-primary-container/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+<!-- Grid Item -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden bg-white border border-slate-100 rounded-2xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+<div class="aspect-square overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="luxury pool deck with designer lounge chairs and shimmering azure water during a bright clear day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm50XzTubGGXsYMvw8rXFJB3zsheQiIx0XCC3s1XrPjDxLUGsQ8qxj5GM1f7ax8k_ACzkxC1d3jmkH9mT5PysBSzKLD4fBWUPbqhUU77_WXgVVYcUGxAJDEZ3QnMzJiOGl_NvQVEJ5hJEXFm7RLKtwl6GRzKBSJ8ODExdG8f45RKVJkDhEbn17seDX_kFQAdAMHQSz3m54cJ6bL691xG0s53xbEFvLOL4fdbsqn_S7unzglnslLKo3feYppZTlDtGM7QSmEXzt_2dx"/>
+</div>
+<div class="absolute inset-0 bg-primary-container/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-4xl">zoom_in</span>
+</div>
+</div>
+<!-- Full Width Detail -->
+<div class="col-span-12 group relative h-[500px] overflow-hidden bg-white border border-slate-100 rounded-2xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+<div class="flex h-full flex-col md:flex-row">
+<div class="w-full md:w-2/3 h-64 md:h-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="panoramic shot of an estate pool area with glass railings and limestone flooring overlooking a valley" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALBm42iU4DNhVdXAwATaqKblwkyRMDULrS-dduZP6gNW2AKyCiteHBxF3nqeq_EyxhaaIm3XY98G0fYPrxwqiybFLMKuuKjbBm7372iLXPNO2q4iFbIJ74YWoIxViZC4kcQQTUMERuGKfP7g_n8kepaAkSFYPWJq4QDJljgkW9GivcDCBYAFjVWCzbtoX8QnSstqDT5nXuwqOrwQgPX9NTvMMK7TwJwDVH0mzXsMyR13DsgkTCefATEcdtNrMpstqL-SoZnfo5sxgD"/>
+</div>
+<div class="w-full md:w-1/3 p-12 flex flex-col justify-center bg-white">
+<span class="font-label-upper text-on-tertiary-container mb-4">Meyersdal Eco Estate</span>
+<h3 class="font-headline-lg text-primary-container mb-6">Environmental Harmony</h3>
+<p class="text-on-surface-variant mb-8">Implementing eco-friendly saline systems that respect the local ecosystem while maintaining five-star clarity.</p>
+<a class="inline-flex items-center text-primary-container font-bold hover:gap-4 transition-all" href="#">
+                                View Full Case Study <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary-container py-32 px-20 rounded-t-[3rem] mt-[-3rem] relative z-10">
+<div class="max-w-[1440px] mx-auto text-center">
+<h2 class="font-display-xl text-on-primary mb-8 max-w-4xl mx-auto italic">Your estate deserves this level of clarity.</h2>
+<button class="bg-on-primary text-primary-container font-label-upper px-12 py-5 rounded-full hover:bg-tertiary-fixed transition-colors border-b-2 border-transparent hover:border-[#a78541] hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
+                    REQUEST A CONSULTATION
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 bg-slate-50 py-20 px-8">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 font-serif text-sm antialiased">
+<div class="flex flex-col gap-6">
+<span class="text-lg font-medium text-[#0A2342]">AQUA ESTATE</span>
+<p class="text-slate-400 max-w-xs text-body-md">Defining the standard of aquatic excellence for Gauteng's most exclusive residential addresses.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-upper text-[#0A2342] mb-2 font-semibold">QUICK LINKS</h4>
+<a class="text-slate-400 hover:text-[#0A2342] hover:translate-x-1 transition-all duration-300 cursor-pointer" href="#">Philosophy</a>
+<a class="text-slate-400 hover:text-[#0A2342] hover:translate-x-1 transition-all duration-300 cursor-pointer" href="#">Sustainability</a>
+<a class="text-slate-400 hover:text-[#0A2342] hover:translate-x-1 transition-all duration-300 cursor-pointer" href="#">Legal</a>
+<a class="text-slate-400 hover:text-[#0A2342] hover:translate-x-1 transition-all duration-300 cursor-pointer" href="#">Press</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-upper text-[#0A2342] mb-2 font-semibold">CONTACT</h4>
+<p class="text-slate-400">Waterfall City, Midrand</p>
+<p class="text-slate-400">+27 (0) 11 465 8000</p>
+<p class="text-slate-400">concierge@aquaestate.co.za</p>
+<div class="mt-8">
+<p class="text-slate-400 text-sm">© 2024 Aqua Estate. Precision in Tranquility.</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Simple Lightbox Overlay (Hidden by Default) -->
+<div class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm hidden flex-items-center justify-center p-12">
+<button class="absolute top-8 right-8 text-white hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+<img class="max-w-full max-h-full object-contain rounded-2xl" data-alt="enlarged view of luxury pool details showing shimmering water and reflection" src=""/>
+</div>
+</body></html>

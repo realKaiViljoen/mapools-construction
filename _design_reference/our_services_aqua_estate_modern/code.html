@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services Overview | AQUA ESTATE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#eff4ff",
+                        "surface-container": "#dfe8fc",
+                        "surface-container-high": "#cfddf9",
+                        "surface-container-highest": "#bed1f7",
+                        "on-surface": "#001849",
+                        "on-surface-variant": "#414754",
+                        "outline": "#717885",
+                        "outline-variant": "#c1c6d6",
+                        "inverse-surface": "#002b74",
+                        "inverse-on-surface": "#eef0ff",
+                        "surface-tint": "#0a2342",
+                        "primary": "#0a2342",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#274061",
+                        "on-primary-container": "#cadfec",
+                        "inverse-primary": "#a6c8ff",
+                        "secondary": "#2563eb",
+                        "on-secondary": "#ffffff",
+                        "secondary-container": "#bfd1fa",
+                        "on-secondary-container": "#001a43",
+                        "tertiary": "#8b5cf6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#dcd1fb",
+                        "on-tertiary-container": "#2c1064",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#f8f9ff",
+                        "on-background": "#001849"
+                    },
+                    "borderRadius": {
+                        "none": "0",
+                        "sm": "0.125rem",
+                        "DEFAULT": "0.25rem",
+                        "md": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Noto Serif"],
+                        "label-upper": ["Noto Serif"],
+                        "body-lg": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                        "headline-md": ["Noto Serif"],
+                        "display-xl": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["1rem", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-upper": ["0.875rem", {"lineHeight": "1.25", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["1.125rem", {"lineHeight": "1.75", "fontWeight": "400"}],
+                        "headline-lg": ["2.5rem", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "headline-md": ["2rem", {"lineHeight": "1.25", "fontWeight": "600"}],
+                        "display-xl": ["3.75rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-seal {
+            background: linear-gradient(135deg, #a78541 0%, #e9c176 50%, #a78541 100%);
+            -webkit-mask: radial-gradient(circle at center, transparent 65%, black 66%);
+        }
+        /* Custom Smooth Scrolling & Utilities */
+        html { scroll-behavior: smooth; }
+        .hover-card {
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .hover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(10, 35, 66, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-white">
+<!-- Top Navigation Bar (Shared Component) -->
+<nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] max-w-[1280px] mt-6 z-50 flex justify-between items-center px-8 py-3 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl rounded-full border border-white/20 dark:border-slate-700/30 shadow-[0_20px_50px_rgba(10,35,66,0.05)] dark:shadow-none">
+<div class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342] dark:text-white">
+            Aqua Estate
+        </div>
+<div class="hidden md:flex items-center space-x-10 font-serif text-sm tracking-wide uppercase">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Pools</a>
+<a class="text-[#0A2342] dark:text-white font-bold border-b border-[#0A2342] dark:border-white pb-1" href="#">Services</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Estates</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Gallery</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-serif text-sm tracking-wide uppercase active:scale-95 transition-transform hover:bg-primary-container">
+            Book a Consult
+        </button>
+</nav>
+<main class="pt-40">
+<!-- Hero Header -->
+<section class="max-w-[1280px] mx-auto px-6 py-24 text-center">
+<span class="text-label-upper font-label-upper text-secondary mb-6 block uppercase tracking-widest">Premier Gauteng Pool Care</span>
+<h1 class="text-display-xl font-display-xl text-primary mb-10 leading-tight">Service Excellence for <br/>Pristine Estate Living</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                Aqua Estate provides bespoke maintenance solutions for luxury properties across Gauteng. From precision chemistry to eco-efficient upgrades, we ensure your aquatic sanctuary remains flawless.
+            </p>
+</section>
+<!-- Services Bento Grid -->
+<section class="max-w-[1280px] mx-auto px-6 pb-48">
+<div class="grid grid-cols-12 gap-8">
+<!-- Weekly Maintenance (Large Primary Card) -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest border border-surface-container rounded-3xl p-14 hover-card relative overflow-hidden group">
+<div class="relative z-10 w-2/3">
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-primary mb-6">Weekly Maintenance</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                            Our flagship white-glove service. Comprehensive cleaning, chemical balancing, and equipment health checks conducted with clockwork precision.
+                        </p>
+<ul class="space-y-5 mb-14">
+<li class="flex items-center text-body-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Precision pH and Chlorine balancing
+                            </li>
+<li class="flex items-center text-body-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Multi-point pump and filter inspection
+                            </li>
+<li class="flex items-center text-body-lg text-on-surface">
+<span class="material-symbols-outlined text-secondary mr-4" data-icon="check_circle" data-weight="fill">check_circle</span>
+                                Surface skimming and robotic sweep optimization
+                            </li>
+</ul>
+<a class="inline-flex items-center text-label-upper font-label-upper text-primary border-b border-primary/30 pb-1 hover:border-primary hover:gap-3 transition-all duration-300 gap-2" href="#">
+                            VIEW PACKAGE DETAILS <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="absolute right-0 top-0 h-full w-2/5 opacity-40 group-hover:opacity-60 group-hover:scale-105 transition-all duration-700 ease-out origin-right">
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest to-transparent z-10"></div>
+<img alt="Pristine luxury pool" class="h-full w-full object-cover" data-alt="high-end luxury swimming pool in a modern garden with clear turquoise water and minimalist architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrdCyyPDm_iz8g48DDXJhsSkjkVITczkRHZ4tbRCXubWw-SuT9leBp25fJtdJXxOa-kHivyqTDOlKhFqC_HQ8SmNfqfGQSQ-jYM6y0crK07w43VYrK6_MZ1AdtaCq5M_P5BbtR_gi40nZ1gBQU1B7ciTQJB1_EvsOh7cAQrE3k70pIFa-wtyFNzYrFmNT2pvNyDm-pCqwMLdG8C1PzOKX8E0IDZ2Mi4csYHIQiG-op6nyEbH2_X1AUFt3HLLHV3n3RlQtQWbG1lzLc"/>
+</div>
+</div>
+<!-- Technical Repairs -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest border border-surface-container rounded-3xl p-12 hover-card flex flex-col justify-between group">
+<div>
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mb-8 group-hover:-rotate-12 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="handyman">handyman</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-6">Technical Repairs</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                            Specialized troubleshooting for complex hydraulic and electrical systems. We fix what others cannot.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-surface-container text-primary font-label-upper text-xs rounded-full uppercase tracking-wider">Pump Repair</span>
+<span class="px-4 py-2 bg-surface-container text-primary font-label-upper text-xs rounded-full uppercase tracking-wider">Leak Detection</span>
+<span class="px-4 py-2 bg-surface-container text-primary font-label-upper text-xs rounded-full uppercase tracking-wider">Chlorinators</span>
+</div>
+</div>
+<!-- Acid Washes (Long Vertical or Focus Card) -->
+<div class="col-span-12 lg:col-span-6 bg-primary text-on-primary rounded-3xl p-14 hover-card relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container z-0"></div>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<h3 class="text-headline-lg font-headline-lg mb-6">Professional Acid Washes</h3>
+<p class="text-body-lg font-body-lg text-on-primary-container mb-10 max-w-md">
+                                Revitalize aging plaster and remove deep stains with our controlled chemical treatment. Restores that "new pool" brilliance in 48 hours.
+                            </p>
+</div>
+<div class="flex items-center bg-white/5 rounded-2xl p-6 backdrop-blur-sm border border-white/10 group-hover:bg-white/10 transition-colors">
+<div class="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center mr-5">
+<span class="material-symbols-outlined text-secondary-container text-2xl" data-icon="sparkles">colors_spark</span>
+</div>
+<div>
+<p class="text-label-upper font-label-upper text-white tracking-widest mb-1">RESULT ORIENTED</p>
+<p class="text-sm text-on-primary-container">Stain removal &amp; algae deep-clean</p>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-secondary/20 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-700"></div>
+</div>
+<!-- Eco-Friendly Equipment -->
+<div class="col-span-12 lg:col-span-6 bg-surface-container-lowest border border-surface-container rounded-3xl p-14 hover-card flex flex-col justify-between group">
+<div>
+<div class="flex justify-between items-start mb-8">
+<div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="eco">eco</span>
+</div>
+<div class="bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-label-upper uppercase tracking-wider font-bold">LATEST TECH</div>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-primary mb-6">Eco-Friendly Equipment</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-10">
+                            Upgrade to sustainable pool management. Reduce electricity costs by up to 70% and minimize chemical dependency.
+                        </p>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 rounded-2xl bg-surface-container-low border border-surface-container group-hover:bg-white transition-colors">
+<p class="font-bold text-primary mb-2 text-lg">Variable Speed</p>
+<p class="text-sm text-on-surface-variant">Intelligent pump flow</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low border border-surface-container group-hover:bg-white transition-colors">
+<p class="font-bold text-primary mb-2 text-lg">UV Sterilizers</p>
+<p class="text-sm text-on-surface-variant">Chemical-free sanitation</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Stamp Section -->
+<section class="max-w-full px-6 py-40 bg-surface-container-low text-center relative overflow-hidden">
+<div class="max-w-[1280px] mx-auto relative z-10 flex flex-col items-center">
+<div class="relative w-40 h-40 mb-10">
+<div class="absolute inset-0 bg-primary/5 rounded-full animate-pulse"></div>
+<div class="absolute inset-4 border border-primary/20 rounded-full border-dashed animate-[spin_20s_linear_infinite]"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-6xl" data-icon="verified" data-weight="fill">verified</span>
+</div>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-8">The Aqua Estate Guarantee</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-16 leading-relaxed">
+                    Every service is backed by our signature stamp of quality. We don't just maintain pools; we preserve your lifestyle assets in Gauteng's most exclusive estates.
+                </p>
+<div class="flex flex-wrap gap-16 justify-center">
+<div class="text-center">
+<p class="text-display-xl font-display-xl text-primary mb-2">15+</p>
+<p class="text-label-upper font-label-upper text-on-surface-variant tracking-widest uppercase">YEARS EXP.</p>
+</div>
+<div class="text-center">
+<p class="text-display-xl font-display-xl text-primary mb-2">24h</p>
+<p class="text-label-upper font-label-upper text-on-surface-variant tracking-widest uppercase">RESPONSE</p>
+</div>
+<div class="text-center">
+<p class="text-display-xl font-display-xl text-primary mb-2">100%</p>
+<p class="text-label-upper font-label-upper text-on-surface-variant tracking-widest uppercase">BIO-SAFE</p>
+</div>
+</div>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-surface-container to-transparent opacity-50"></div>
+<div class="absolute bottom-0 right-0 w-[800px] h-[800px] bg-secondary/5 rounded-full blur-[100px] translate-y-1/2 translate-x-1/4"></div>
+</section>
+<!-- Booking CTA -->
+<section class="max-w-[1280px] mx-auto px-6 py-48 flex flex-col lg:flex-row items-center gap-24">
+<div class="flex-1">
+<h2 class="text-display-xl font-display-xl text-primary mb-8 leading-tight">Ready for <br/>Crystal Clarity?</h2>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-12 max-w-lg leading-relaxed">
+                    Schedule a consultation with our lead technician today and experience the difference of professional estate pool management.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-upper text-sm tracking-wider uppercase hover:bg-primary-container hover:-translate-y-1 transition-all duration-300 shadow-lg shadow-primary/20">
+                        BOOK A SITE VISIT
+                    </button>
+<button class="bg-white border border-outline-variant px-10 py-5 rounded-full font-label-upper text-sm tracking-wider uppercase text-primary hover:border-primary hover:bg-surface-container-low transition-all duration-300">
+                        VIEW PRICING
+                    </button>
+</div>
+</div>
+<div class="flex-1 w-full h-[600px] relative">
+<div class="absolute inset-0 bg-secondary/10 rounded-[3rem] -rotate-3 transform origin-bottom-right"></div>
+<img alt="Professional pool technician" class="w-full h-full object-cover rounded-[3rem] shadow-2xl relative z-10 hover-card" data-alt="professional pool maintenance technician in uniform testing water quality at a high-end residential pool at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSOu8ljp8qUT5d-jRnDizE-tEJ9Zq7QUcNhuvM10RuHutnHBA2Wb0xMaCe-CSv9ubcE-gHg18cukEoz39ClmBbkb5Om4h5lDvwXFMW5grvrDwzDfRDtVDW_7Ibgw6xi4zc8DDPE4Sp4t0fp15rabDWFq58gOm4kEo-danjJA6Cpc246lnspVhrtE1ordJR1DId_FcK709fry2Pb_nEx0Sp2yhSrJLCfaQfs8lsTbqQSz9jNHkJu0Nta70o_K154TykoDgAzzJsk-EM"/>
+</div>
+</section>
+</main>
+<!-- Footer Component (Shared Component) -->
+<footer class="w-full bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 py-20 px-8">
+<div class="flex flex-col gap-6 max-w-sm">
+<div class="font-serif text-lg font-medium text-[#0A2342] dark:text-white">AQUA ESTATE</div>
+<p class="font-serif text-sm antialiased text-[#0A2342] dark:text-slate-200">Premier pool maintenance services tailored for Gauteng's most prestigious homes and private estates.</p>
+<div class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 mt-4">
+                    © 2024 Aqua Estate. Precision in Tranquility.
+                </div>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300 cursor-pointer" href="#">Philosophy</a>
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300 cursor-pointer" href="#">Sustainability</a>
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300 cursor-pointer" href="#">Legal</a>
+<a class="font-serif text-sm antialiased text-slate-400 dark:text-slate-500 hover:text-[#0A2342] dark:hover:text-white transition-colors duration-300 cursor-pointer" href="#">Press</a>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 font-serif text-sm antialiased text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined text-[#0A2342] dark:text-slate-200" data-icon="mail">mail</span>
+                    info@aquaestate.co.za
+                </div>
+<div class="flex items-center gap-3 font-serif text-sm antialiased text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined text-[#0A2342] dark:text-slate-200" data-icon="phone">phone</span>
+                    +27 (0) 11 555 0123
+                </div>
+<div class="font-serif text-sm antialiased text-[#0A2342] dark:text-slate-200 mt-4">
+                    Gauteng, South Africa
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
