@@ -42,44 +42,84 @@
  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
 
         /* Custom cursor (desktop only) */
+        @media (hover: hover) and (pointer: fine) {
+            body.ma-cursor-active { cursor: none; }
+            body.ma-cursor-active a,
+            body.ma-cursor-active button,
+            body.ma-cursor-active [role="button"],
+            body.ma-cursor-active summary,
+            body.ma-cursor-active label { cursor: none; }
+            body.ma-cursor-active input,
+            body.ma-cursor-active textarea,
+            body.ma-cursor-active select,
+            body.ma-cursor-active [contenteditable] { cursor: text !important; }
+        }
         .ma-cursor-dot, .ma-cursor-ring {
             position: fixed;
             top: 0; left: 0;
             pointer-events: none;
             z-index: 9999;
             border-radius: 50%;
-            transform: translate3d(-50%, -50%, 0);
-            display: none;
+            opacity: 0;
+            will-change: transform;
         }
-        @media (hover: hover) and (pointer: fine) {
-            body.ma-cursor-on { cursor: none; }
-            body.ma-cursor-on a,
-            body.ma-cursor-on button,
-            body.ma-cursor-on [role="button"],
-            body.ma-cursor-on summary,
-            body.ma-cursor-on label { cursor: none; }
-            body.ma-cursor-on input,
-            body.ma-cursor-on textarea,
-            body.ma-cursor-on select { cursor: text; }
-            .ma-cursor-dot, .ma-cursor-ring { display: block; }
-        }
+        .ma-cursor-dot.ready, .ma-cursor-ring.ready { opacity: 1; }
         .ma-cursor-dot {
-            width: 6px; height: 6px;
-            background: #0A2342;
+            width: 8px; height: 8px;
+            background: #fff;
+            box-shadow: 0 0 0 1.5px #0A2342, 0 2px 8px rgba(10,35,66,0.25);
+            margin: -4px 0 0 -4px;
+            transition: opacity 200ms;
         }
         .ma-cursor-ring {
-            width: 32px; height: 32px;
-            border: 1.5px solid rgba(10, 35, 66, 0.35);
+            width: 36px; height: 36px;
+            border: 1.5px solid rgba(10, 35, 66, 0.45);
+            margin: -18px 0 0 -18px;
             transition: width 240ms cubic-bezier(0.22, 1, 0.36, 1),
                         height 240ms cubic-bezier(0.22, 1, 0.36, 1),
+                        margin 240ms cubic-bezier(0.22, 1, 0.36, 1),
                         border-color 240ms,
-                        background-color 240ms;
+                        background-color 240ms,
+                        opacity 200ms;
         }
         .ma-cursor-ring.active {
-            width: 52px; height: 52px;
+            width: 56px; height: 56px;
+            margin: -28px 0 0 -28px;
             border-color: #25D366;
-            background: rgba(37, 211, 102, 0.10);
+            background: rgba(37, 211, 102, 0.12);
         }
+        @media (pointer: coarse), (hover: none) {
+            .ma-cursor-dot, .ma-cursor-ring { display: none !important; }
+        }
+
+        /* Page-load fade-in */
+        body { opacity: 0; transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1); }
+        body.ma-page-loaded { opacity: 1; }
+        @media (prefers-reduced-motion: reduce) { body { opacity: 1 !important; transition: none; } }
+
+        /* Focus-visible polish (sitewide) */
+        *:focus { outline: none; }
+        *:focus-visible {
+            outline: 2px solid #0A2342;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+        a:focus-visible, button:focus-visible, [role="button"]:focus-visible {
+            outline-color: #0A2342;
+        }
+        input:focus-visible, textarea:focus-visible, select:focus-visible {
+            outline: 2px solid #0A2342;
+            outline-offset: 1px;
+        }
+
+        /* WhatsApp pulse */
+        @keyframes ma-wa-pulse {
+            0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55), 0 10px 30px rgba(37,211,102,0.45); }
+            70%  { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); 0 10px 30px rgba(37,211,102,0.45); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); 0 10px 30px rgba(37,211,102,0.45); }
+        }
+        .ma-wa-pulse { animation: ma-wa-pulse 2.4s cubic-bezier(0.22,1,0.36,1) infinite; }
+        @media (prefers-reduced-motion: reduce) { .ma-wa-pulse { animation: none; } }
     </style>
 <!-- AE:META:START -->
 <title>Services | Pool builds, renovations, plumbing, paving | Ma Pools Construction</title>
@@ -145,9 +185,7 @@
 <body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-white pb-20 md:pb-0">
 <!-- Top Navigation Bar (Shared Component) -->
 <nav class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] max-w-[1280px] mt-6 z-50 flex justify-between items-center px-8 py-3 bg-white/60 backdrop-blur-xl rounded-full border border-white/20 shadow-[0_20px_50px_rgba(10,35,66,0.05)]">
-<div class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342]">
- Ma Pools Construction
- </div>
+<a href="/" aria-label="Ma Pools Construction home" class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342] hover:opacity-80 transition-opacity">Ma Pools Construction</a>
 <div class="hidden md:flex items-center space-x-10 font-serif text-sm tracking-wide uppercase">
 <a class="text-[#0A2342] font-bold border-b border-[#0A2342] pb-1" href="/services.html">Services</a>
 <a class="text-[#0A2342]/85 hover:text-[#0A2342] transition-colors hover:scale-[1.02] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" href="/gallery.html">Gallery</a>
@@ -506,7 +544,7 @@ WhatsApp
 </div>
 <!-- AE:STICKY-CTA:END -->
 <!-- AE:WA-FLOAT:START -->
-<a href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20book%20a%20pool%20service" target="_blank" rel="noopener noreferrer" aria-label="Chat with Ma Pools Construction on WhatsApp" class="fixed bottom-6 left-6 z-[100] bg-[#25D366] hover:bg-[#1ebe57] text-white rounded-full w-14 h-14 hidden md:flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300" style="box-shadow: 0 10px 30px rgba(37,211,102,0.45);">
+<a href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20book%20a%20pool%20service" target="_blank" rel="noopener noreferrer" aria-label="Chat with Ma Pools Construction on WhatsApp" class="fixed bottom-6 left-6 z-[100] bg-[#25D366] hover:bg-[#1ebe57] text-white rounded-full w-14 h-14 hidden md:flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 ma-wa-pulse" style="box-shadow: 0 10px 30px rgba(37,211,102,0.45);">
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.554-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.521.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
 </a>
 <!-- AE:WA-FLOAT:END -->
@@ -619,24 +657,31 @@ WhatsApp
 })();
 </script>
 <!-- AE:MOBILE-NAV-JS:END -->
+
 <!-- AE:CURSOR:START -->
 <script>
 (function(){
-  if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
-  if (window.maCursorOn) return; window.maCursorOn = true;
-  document.body.classList.add('ma-cursor-on');
+  if (window.__maCursor) return;
+  if (matchMedia('(pointer: coarse)').matches) return;
+  window.__maCursor = true;
   var dot = document.createElement('div'); dot.className = 'ma-cursor-dot';
   var ring = document.createElement('div'); ring.className = 'ma-cursor-ring';
   document.body.appendChild(dot); document.body.appendChild(ring);
-  var mx = 0, my = 0, rx = 0, ry = 0;
+  var mx = -100, my = -100, rx = -100, ry = -100, started = false;
+  function start(){
+    if (started) return; started = true;
+    document.body.classList.add('ma-cursor-active');
+    dot.classList.add('ready'); ring.classList.add('ready');
+  }
   document.addEventListener('mousemove', function(e){
+    if (!started) start();
     mx = e.clientX; my = e.clientY;
-    dot.style.transform = 'translate3d(' + mx + 'px,' + my + 'px,0) translate(-50%,-50%)';
+    dot.style.transform = 'translate3d(' + mx + 'px,' + my + 'px,0)';
   }, { passive: true });
   (function loop(){
     rx += (mx - rx) * 0.18;
     ry += (my - ry) * 0.18;
-    ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0) translate(-50%,-50%)';
+    ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0)';
     requestAnimationFrame(loop);
   })();
   var sel = 'a, button, [role="button"], summary, label, [data-cursor="active"]';
@@ -646,13 +691,29 @@ WhatsApp
   document.addEventListener('mouseout', function(e){
     if (e.target && e.target.closest && e.target.closest(sel)) ring.classList.remove('active');
   });
-  document.addEventListener('mouseleave', function(){
-    dot.style.opacity = ring.style.opacity = '0';
-  });
-  document.addEventListener('mouseenter', function(){
-    dot.style.opacity = ring.style.opacity = '1';
-  });
+  document.addEventListener('mouseleave', function(){ dot.style.opacity = ring.style.opacity = '0'; });
+  document.addEventListener('mouseenter', function(){ if (started) { dot.style.opacity = ring.style.opacity = '1'; } });
 })();
 </script>
 <!-- AE:CURSOR:END -->
+<!-- AE:PAGEFADE:START -->
+<script>
+(function(){
+  function go(){ document.body.classList.add('ma-page-loaded'); }
+  if (document.readyState === 'complete') { go(); }
+  else { window.addEventListener('load', go); }
+  // Scroll-reveal observer (covers .scroll-reveal class on every page)
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.scroll-reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.scroll-reveal').forEach(function(el){ el.classList.add('visible'); });
+  }
+})();
+</script>
+<!-- AE:PAGEFADE:END -->
 </body></html>
