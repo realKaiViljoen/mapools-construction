@@ -5,7 +5,9 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -17,31 +19,22 @@
                     borderRadius: {"DEFAULT":"0.5rem","none":"0","sm":"0.25rem","md":"0.5rem","lg":"0.75rem","xl":"1rem","2xl":"1.5rem","3xl":"2rem","full":"9999px"
                     },
                     fontFamily: {
-                        sans: ['"Noto Serif"',"serif"],
-                        serif: ['"Noto Serif"',"serif"]
+                        sans: ['"Manrope"',"serif"],
+                        serif: ['"Manrope"',"serif"]
                     }
                 }
             }
         };
     </script>
-<style>
+<style>        :root { --brand-navy: #0A2342; --brand-green: #25D366; --brand-cyan: #2BA8B8; }
+        body { font-family: 'Manrope', system-ui, sans-serif; }
+
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .signature-stamp {
-            border: 1px solid var(--tw-colors-outline-variant);
-            padding: 12px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 10px;
-            font-weight: 700;
-            color: var(--tw-colors-primary);
-            border-radius: 0.5rem;
-        }
-    </style>
+        /* iOS safe-area for sticky bottom bar */
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0); }
+</style>
 <!-- AE:META:START -->
 <title>About Ma Pools Construction | Director-led pool builds &amp; care, Gauteng</title>
 <meta name="description" content="Ma Pools Construction is a director-led pool construction and care business based in Meadowlands, Soweto, serving homes and businesses across Gauteng."/>
@@ -97,7 +90,7 @@
 </script>
 <!-- AE:META:END -->
 </head>
-<body class="bg-background text-on-background font-sans antialiased">
+<body class="bg-background text-on-background font-sans antialiased pb-20 md:pb-0">
 <!-- TopNavBar -->
 <header class="fixed top-0 left-1/2 -translate-x-1/2 w-[90%] z-50 flex justify-between items-center px-8 py-3 bg-white/60 backdrop-blur-xl rounded-full border border-white/40 max-w-[1280px] mt-6 shadow-[0_20px_50px_rgba(10,35,66,0.05)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
 <a class="text-2xl font-serif font-semibold tracking-tighter text-[#0A2342]" href="/index.html">MA POOLS CONSTRUCTION</a>
@@ -137,21 +130,40 @@
 </div>
 <!-- AE:MOBILE-NAV:END -->
 </header>
-<main class="pt-32">
-<!-- Hero Section -->
-<section class="relative h-[600px] flex items-center overflow-hidden mx-4 md:mx-12 rounded-3xl">
+<main>
+<!-- AE:HERO:START -->
+<!-- HERO -->
+<section class="relative min-h-[88vh] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img loading="eager" fetchpriority="high" decoding="async" alt="Minimalist infinity pool overlooking a sunset Gauteng landscape with calm blue water and clean architectural lines" class="w-full h-full object-cover" src="/assets/images/about-hero-minimalist-infinity-pool-sunset.png"/>
-<div class="absolute inset-0 bg-primary/30 backdrop-brightness-75"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-[#0A2342]/90 via-[#0A2342]/65 to-[#0A2342]/30"></div>
 </div>
-<div class="relative z-10 max-w-[1280px] mx-auto px-12 md:px-20 w-full">
-<div class="max-w-2xl">
-<span class="text-sm font-bold tracking-[0.1em] text-surface-container-low block mb-4 uppercase">MEADOWLANDS · GAUTENG</span>
-<h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">Built by hand. Run by the director.</h1>
-<p class="text-lg md:text-xl text-white/90 leading-relaxed">Ma Pools Construction is a Soweto-based pool and construction business led by founding director Mkhacani Amos Chauke. We service homes and businesses across Gauteng — from new pool builds and renovations to plumbing, paving, and ongoing pool care.</p>
+<div class="relative z-10 px-6 md:px-12 lg:px-20 max-w-[1280px] mx-auto w-full pt-32 md:pt-36 pb-20">
+<div class="max-w-3xl space-y-6 md:space-y-7">
+<span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-white/90 bg-white/10 backdrop-blur-md border border-white/25 px-4 py-2 rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#25D366]"></span>
+Founded by Mkhacani Amos Chauke
+</span>
+<h1 class="text-[34px] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px] font-extrabold leading-[1.05] tracking-tight text-white">
+I'm Mkhacani. We build, fix and look after pools across Gauteng.
+</h1>
+<p class="text-base md:text-lg leading-relaxed text-white/90 max-w-xl">
+Ma Pools Construction runs out of Meadowlands, Soweto and works the whole of Gauteng — Joburg to Pretoria. Send a photo on WhatsApp and you'll have a free quote from me within 24 hours.
+</p>
+<div class="flex flex-wrap gap-3 pt-2">
+<a class="bg-[#25D366] hover:bg-[#1ebe57] text-white px-7 py-4 rounded-full text-sm font-bold tracking-wide uppercase shadow-2xl active:scale-95 transition-all inline-flex items-center gap-2" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener" role="button">
+<span class="material-symbols-outlined">chat</span>
+Chat on WhatsApp
+</a>
+<a class="border-2 border-white/40 backdrop-blur-md bg-white/5 hover:bg-white/15 text-white px-7 py-4 rounded-full text-sm font-bold tracking-wide uppercase active:scale-95 transition-all inline-flex items-center gap-2" href="tel:+27787122157" role="button">
+<span class="material-symbols-outlined">call</span>
+Call 078 712 2157
+</a>
+</div>
 </div>
 </div>
 </section>
+<!-- AE:HERO:END -->
 <!-- About/Expertise Section -->
 <section class="py-32 px-6 md:px-20 max-w-[1280px] mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
@@ -328,8 +340,20 @@ Use the full quote form
 </div>
 </footer>
 <!-- AE:FOOTER:END -->
+<!-- AE:STICKY-CTA:START -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-[90] bg-white border-t border-slate-200 shadow-[0_-10px_30px_rgba(10,35,66,0.12)] grid grid-cols-2 pb-safe">
+<a class="flex items-center justify-center gap-2 bg-[#0A2342] text-white py-4 text-sm font-bold tracking-wide uppercase active:scale-95 transition-transform" href="tel:+27787122157">
+<span class="material-symbols-outlined">call</span>
+Call
+</a>
+<a class="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 text-sm font-bold tracking-wide uppercase active:scale-95 transition-transform" href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20a%20free%20quote." target="_blank" rel="noopener">
+<span class="material-symbols-outlined">chat</span>
+WhatsApp
+</a>
+</div>
+<!-- AE:STICKY-CTA:END -->
 <!-- AE:WA-FLOAT:START -->
-<a href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20book%20a%20pool%20service" target="_blank" rel="noopener noreferrer" aria-label="Chat with Ma Pools Construction on WhatsApp" class="fixed bottom-6 right-6 z-[100] bg-[#25D366] hover:bg-[#1ebe57] text-white rounded-full w-14 h-14 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300" style="box-shadow: 0 10px 30px rgba(37,211,102,0.45);">
+<a href="https://wa.me/27656430603?text=Hi%20Ma%20Pools%20Construction%2C%20I%27d%20like%20to%20book%20a%20pool%20service" target="_blank" rel="noopener noreferrer" aria-label="Chat with Ma Pools Construction on WhatsApp" class="fixed bottom-6 right-6 z-[100] bg-[#25D366] hover:bg-[#1ebe57] text-white rounded-full w-14 h-14 hidden md:flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300" style="box-shadow: 0 10px 30px rgba(37,211,102,0.45);">
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.554-5.338 11.89-11.893 11.89a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.521.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
 </a>
 <!-- AE:WA-FLOAT:END -->
